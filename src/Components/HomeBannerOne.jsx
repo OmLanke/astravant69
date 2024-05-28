@@ -3,7 +3,7 @@ import React from 'react'
 const HomeBannerOne = () => {
     return (
         <>
-            <div className="bg-cover flex flex-col bg-center w-full h-screen" style={{ backgroundImage: "url('/hpbg.png')" }}>
+            <div className="relative bg-cover flex flex-col bg-center w-full h-screen" style={{ backgroundImage: "url('/hpbg.png')" }}>
                 <div className='flex flex-col my-auto text-4xl md:text-6xl lg:text-7xl lg:ml-64 md:ml-24 text-white font-light justify-between font-medio'>
 
                     <h2 className=''>Where Dreams</h2>
