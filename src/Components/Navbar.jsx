@@ -9,15 +9,17 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="fixed top-0 left-0 w-full bg-transparent text-white flex justify-between items-center p-4 z-10">
+      <nav className="fixed top-0 left-0 w-full bg-transparent text-white flex justify-between items-center p-4 pl-8 pr-8 z-10">
+        <a href="/">
         <img src="your-logo-url.png" alt="Logo" className="h-10" />
+          </a>
 
         <div className="flex items-center space-x-4">
           <div className="flex space-x-4">
-            <a href="#" className="hover:underline">Search by Area</a>
-            <a href="#" className="hover:underline">Find Your Dream Home</a>
-            <a href="#" className="hover:underline">Our Services</a>
-            <a href="#" className="hover:underline">About Us</a>
+            <a href="#" className="hover:underline">About us</a>
+            <a href="#" className="hover:underline">Our services</a>
+            <a href="#" className="hover:underline">Search by area</a>
+            <a href="/contact" className="hover:underline">Contact Us</a>
           </div>
           <button onClick={toggleSideNav} className="focus:outline-none">
             <svg
