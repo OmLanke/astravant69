@@ -6,6 +6,8 @@ import SearchByAddress from '../Components/SearchByAddress.jsx'
 import ApartmentListing from '../Components/ApartmentListing.jsx'
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
+import "../Pages/Search.css"
+import Footer from '../Components/Footer.jsx'
 
 
 
@@ -224,20 +226,20 @@ const Contact = () => {
 
             {/* ---------------------------------------- */}
 
-
-            <div className="flex flex-col justify-between bg-[#E79700] pb-96 w-full p-20">
+            <div className='pb-8'>
+            <div className="flex flex-col justify-between bg-[#E79700] w-full p-20">
                 <div className=" lg:text-7xl text-[#04236D]">
                     <p>Want to find your ideal house?</p>
                 </div>
 
-                <div>
+                <div className='flex'>
                     <div className='text-[#04236D] text-md'>
-                        <p className='w-[40%] font-bold pt-6 tracking-widest'>
-                        Contact us and we will provide you our expert guidance and assistance in finding your dream house.
+                        <p className='w-[70%] font-bold pt-6 tracking-widest'>
+                            Contact us and we will provide you our expert guidance and assistance in finding your dream house.
                         </p>
                         <div className='pt-6 font-bold'>
                             <p>
-                            Connect with us
+                                Connect with us
                             </p>
                             <div className='py-2'>
                                 <p className='text-white pb-4'>
@@ -251,11 +253,61 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="flex flex-col items-center gap-8 pt-8">
+                        <div className="flex gap-8 w-full max-w-2xl">
+                            <input
+                                type="text"
+                                placeholder="First Name"
+                                className="flex-1 p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                            />
+                            <input
+                                type="text"
+                                placeholder="Last Name"
+                                className="flex-1 p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                            />
+                        </div>
+
+                        <div className="w-full max-w-2xl">
+                            <input
+                                type="text"
+                                placeholder="Phone Number"
+                                className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                            />
+                        </div>
+
+                        <div className="w-full max-w-2xl">
+                            <input
+                                type="text"
+                                placeholder="Property Requirements"
+                                className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                            />
+                        </div>
+
+                        <div className="w-full max-w-2xl">
+                            <input
+                                type="text"
+                                placeholder="Your Budget Range"
+                                className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                            />
+                        </div>
+                        <div className="w-full max-w-2xl">
+                            <button className=" p-2 pl-8 pr-8 border border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold"
+                            >
+                                Submit
+                            </button>
+                        </div>
+
 
                     </div>
                 </div>
+                </div>
             </div>
+
+            <Nsl />
+
+            <Footer />
+
+
 
 
 
@@ -264,5 +316,8 @@ const Contact = () => {
         </>
     )
 }
+
+
+
 
 export default Contact
