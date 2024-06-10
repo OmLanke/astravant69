@@ -1,0 +1,7 @@
+/* styles.css */
+::placeholder {
+    text-align: left;
+    font-weight: 300;
+    color: white;
+  }
+  

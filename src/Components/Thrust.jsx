@@ -4,7 +4,7 @@ const Thrust = () => {
     return (
         <>
             <div className="flex flex-col justify-between bg-[#E79700] pb-96 w-full p-20">
-                <div className="mx-auto flex flex-col items-center justify-center lg:text-7xl text-[#001F66]">
+                <div className="mx-auto flex flex-col items-center justify-center lg:text-6xl text-[#001F66]">
                     <p>Holding an taking care of more than</p>
                     <p>10,000+ customers trust</p>
                 </div>
