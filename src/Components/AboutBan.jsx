@@ -13,10 +13,10 @@ const AboutBan =() => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-gray-900">
+    <div>
       
 
-      <div className="relative isolate overflow-hidden pt-14">
+      <div className="relative isolate overflow-hidden pt-14 rounded-xl">
         <img
           src="/concon.png"
           alt=""
