@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
+import Navbar from '../Components/Navbar2'
 import ConBanOne from '../Components/ConBanOne'
 import ConBanTwo from '../Components/ConBanTwo'
 import Nsl from '../Components/Nsl'

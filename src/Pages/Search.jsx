@@ -1,5 +1,6 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
+import Navbar from '../Components/Navbar2'
+import { Link } from 'react-router-dom';
 import ConBanTwo from '../Components/ConBanTwo'
 import Nsl from '../Components/Nsl'
 import SearchByAddress from '../Components/SearchByAddress.jsx'
@@ -9,41 +10,44 @@ import { FaStarHalf } from "react-icons/fa";
 import "../Pages/Search.css"
 import Footer from '../Components/Footer.jsx'
 import db from '../assets/db.json'
-const PropertyPreview = ({name, bhk, area, photo}) => {
+const PropertyPreview = ({name, bhk, area, photo, id}) => {
     return (
-        <div className='flex flex-col gap-4'>
-            <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: `url(${photo})` }}>
-                {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                <p className='pl-9 pr-9'>2 BHK</p>
-            </div> */}
-            </div>
+       <Link to={`/propertypage/${id}`} >
+            <div className='flex flex-col gap-4'>
+                <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: `url(${photo})` }}>
+                    {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
+                    <p className='pl-9 pr-9'>2 BHK</p>
+                </div> */}
+                </div>
 
-            <div>
-                <div className='flex justify-between'>
-                    <p>
-                        {name}
-                    </p>
-                    <p>
-                        {bhk} , {area}
-                    </p>
-                </div>
-                <div className='flex justify-between'>
-                    <p>
-                        address
-                    </p>
-                    <p className='flex '>
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStarHalf />
-                    </p>
+                <div>
+                    <div className='flex justify-between'>
+                        <p>
+                            {name}
+                        </p>
+                        <p>
+                            {bhk} , {area}
+                        </p>
+                    </div>
+                    <div className='flex justify-between'>
+                        <p>
+                            address
+                        </p>
+                        <p className='flex '>
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStarHalf />
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 
 const Contact = () => {
+    console.log(db.slice(0,4));
     return (
         <>
             <Navbar />
@@ -64,170 +68,12 @@ const Contact = () => {
 
             <div className=" items-center justify-center flex flex-col gap-2">
                 <div className="flex flex-row p-2 gap-2">
-                    <PropertyPreview />
-                    <div className='flex flex-col gap-4'>
-                        <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: "url('/ast9.png')" }}>
-                            {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
-                        </div> */}
-                        </div>
-
-                        <div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    Elvis Heights
-                                </p>
-                                <p>
-                                    1-B.H.K , 800sq ft
-                                </p>
-                            </div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    address
-                                </p>
-                                <p className='flex '>
-                                    <FaStarHalf />
-                                    <FaStar />
-                                    <FaStar />
-                                    <FaStar />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='flex flex-col gap-4'>
-                        <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: "url('/ast10.png')" }}>
-                            {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
-                        </div> */}
-                        </div>
-
-                        <div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    Elvis Heights
-                                </p>
-                                <p>
-                                    1-B.H.K , 800sq ft
-                                </p>
-                            </div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    address
-                                </p>
-                                <p className='flex '>
-                                    <FaStarHalf />
-                                    <FaStar />
-                                    <FaStar />
-                                    <FaStar />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
+                    {db.slice(0,3).map((property, index) => <PropertyPreview name={property.name} bhk={property.bhk} area={property.area} photo={property.imgurl} id={index}/>)}
                 </div>
                 <div className="flex flex-row pl-2 pr-2 pb-2 gap-2">
-                    <div className='flex flex-col gap-4'>
-                        <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: "url('/ast11.png')" }}>
-                            {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
-                        </div> */}
-                        </div>
-
-                        <div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    Elvis Heights
-                                </p>
-                                <p>
-                                    1-B.H.K , 800sq ft
-                                </p>
-                            </div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    address
-                                </p>
-                                <p className='flex '>
-                                    <FaStarHalf />
-                                    <FaStar />
-                                    <FaStar />
-                                    <FaStar />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex flex-col gap-4'>
-                        <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: "url('/ast12.png')" }}>
-                            {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
-                        </div> */}
-                        </div>
-
-                        <div >
-                            <div className='flex justify-between'>
-                                <p>
-                                    Elvis Heights
-                                </p>
-                                <p>
-                                    1-B.H.K , 800sq ft
-                                </p>
-                            </div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    address
-                                </p>
-                                <p className='flex '>
-                                    <FaStarHalf />
-                                    <FaStar />
-                                    <FaStar />
-                                    <FaStar />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex flex-col gap-4'>
-                        <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: "url('/ast13.png')" }}>
-                            {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
-                        </div> */}
-                        </div>
-
-                        <div >
-                            <div className='flex justify-between'>
-                                <p>
-                                    Elvis Heights
-                                </p>
-                                <p>
-                                    1-B.H.K , 800sq ft
-                                </p>
-                            </div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    address
-                                </p>
-                                <p className='flex '>
-                                    <FaStarHalf />
-                                    <FaStar />
-                                    <FaStar />
-                                    <FaStar />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
+                    {db.slice(3,6).map((property, index) => <PropertyPreview name={property.name} bhk={property.bhk} area={property.area} photo={property.imgurl} id={index+3}/>)}
                 </div>
             </div>
-
-
-
-
-
-
-
-
             {/* ---------------------------------------- */}
 
             <div className='pb-8'>

@@ -1,6 +1,6 @@
 [
     {
-        "name":"elvis heights",
+        "name":"Elvis heights",
         "bhk":"1 BHK",
         "area":"800 SqFt",
         "price":"105K",
@@ -18,7 +18,7 @@
         "furnishing":"Semi-Furnished"
     },
     {
-        "name":"oakwood apartments",
+        "name":"Oakwood apartments",
         "bhk":"2 BHK",
         "area":"1200 SqFt",
         "price":"180K",
@@ -29,13 +29,13 @@
         "description":"This spacious 2 BHK apartment features a modern kitchen and a large balcony.",
         "amenities":"Gym, Tennis Court, Community Hall, 24/7 Security",
         "other":"Located in a gated community with 24/7 power backup",
-        "imgurl":"/oakwood.png",
+        "imgurl":"/ast9.png",
         "location":"Suburbs",
         "facing":"West",
         "furnishing":"Fully-Furnished"
     },
     {
-        "name":"riverview estates",
+        "name":"Riverview estates",
         "bhk":"3 BHK",
         "area":"2000 SqFt",
         "price":"350K",
@@ -46,13 +46,13 @@
         "description":"This luxurious 3 BHK apartment offers stunning views of the river.",
         "amenities":"Gym, Swimming Pool, Spa, 24/7 Security",
         "other":"Features a private garden and a servant's quarter",
-        "imgurl":"/riverview.png",
+        "imgurl":"/ast11.png",
         "location":"Riverfront",
         "facing":"North",
         "furnishing":"Unfurnished"
     },
     {
-        "name":"parkside villas",
+        "name":"Parkside villas",
         "bhk":"4 BHK",
         "area":"3000 SqFt",
         "price":"500K",
@@ -63,13 +63,13 @@
         "description":"This luxurious 4 BHK villa features a private pool and a backyard.",
         "amenities":"Gym, Tennis Court, Community Hall, 24/7 Security",
         "other":"Located in a gated community with 24/7 power backup",
-        "imgurl":"/parkside.png",
+        "imgurl":"/ast12.png",
         "location":"Golf Course",
         "facing":"South",
         "furnishing":"Semi-Furnished"
     },
     {
-        "name":"lakeview apartments",
+        "name":"Lakeview apartments",
         "bhk":"2 BHK",
         "area":"1500 SqFt",
         "price":"220K",
@@ -80,13 +80,13 @@
         "description":"This spacious 2 BHK apartment features a modern kitchen and a large balcony.",
         "amenities":"Gym, Swimming Pool, Clubhouse, 24/7 Security",
         "other":"Close proximity to schools, hospitals, and shopping centers",
-        "imgurl":"/lakeview.png",
+        "imgurl":"/ast13.png",
         "location":"Lakefront",
         "facing":"East",
         "furnishing":"Fully-Furnished"
     },
     {
-        "name":"hillside estates",
+        "name":"Hillside estates",
         "bhk":"5 BHK",
         "area":"4000 SqFt",
         "price":"700K",
@@ -97,7 +97,7 @@
         "description":"This luxurious 5 BHK estate features a private movie theater and a game room.",
         "amenities":"Gym, Swimming Pool, Spa, 24/7 Security",
         "other":"Features a private garden and a servant's quarter",
-        "imgurl":"/hillside.png",
+        "imgurl":"/ast10.png",
         "location":"Hilltop",
         "facing":"West",
         "furnishing":"Unfurnished"
