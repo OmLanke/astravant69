@@ -21,7 +21,7 @@ const Nsl = () => {
                         </div>
 
                         <div className="border-t-2 border-r-2 border-b-2 transform -translate-x-[0px] translate-y-10 p-6 my-auto mx-auto text-white text-center flex flex-col gap-6 border-white">
-                            <p className='text-2xl'>NEWSLATER</p>
+                            <p className='text-2xl'>Newsletter</p>
                             <p className='w-4/5 mx-auto leading-tight'>For exclusive news and market updates, sign up for our newsletter.</p>
                             <input type="email" className='border border-2 w-2/3 mx-auto outline-none border-r-white p-3 bg-[rgba(29,89,227,0.31)]' placeholder='Your Email' name="" id="" />
                             <button className='border-[2px] p-2 hover:bg-white transition duration-500 hover:text-[#001F66] border-white w-1/4 text-center mx-auto mt-8 mb-7'>Submit</button>
