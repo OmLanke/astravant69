@@ -6,12 +6,12 @@ import Nsl from '../Components/Nsl'
 
 const Contact = () => {
     return (
-        <>
+        <div className='px-4 pb-4'>
             <Navbar />
             <ConBanOne />
             <ConBanTwo />
             <Nsl />
-        </>
+        </div>
     )
 }
 

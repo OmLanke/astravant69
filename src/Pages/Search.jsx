@@ -51,116 +51,112 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <div className="relative text-white bg-cover flex flex-col bg-center w-full h-screen mb-44" style={{ backgroundImage: "url('/searchBan.png')" }}>
-                <div className="mx-auto my-auto flex flex-col gap-8">
-                    <div className="text-7xl">
-                        <p>Search By Properties</p>
+            <div className='px-4 pb-4'>
+                <div className="relative text-white bg-cover flex flex-col bg-center w-full h-screen mb-44" style={{ backgroundImage: "url('/searchBan.png')" }}>
+                    <div className="mx-auto my-auto flex flex-col gap-8">
+                        <div className="text-7xl">
+                            <p>Search By Properties</p>
+                        </div>
+                        {/* <div className="p-2 pl-4 pr-4 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border border-[2px] mb-20 border-white mx-auto">
+                            <p>Contact Us</p>
+                        </div> */}
+
                     </div>
-                    {/* <div className="p-2 pl-4 pr-4 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border border-[2px] mb-20 border-white mx-auto">
-                        <p>Contact Us</p>
-                    </div> */}
 
                 </div>
-
-            </div>
-            <SearchByAddress />
+                <SearchByAddress />
 
 
-            <div className=" items-center justify-center flex flex-col gap-2">
-                <div className="flex flex-row p-2 gap-2">
-                    {db.slice(0,3).map((property, index) => <PropertyPreview name={property.name} bhk={property.bhk} area={property.area} photo={property.imgurl} id={index}/>)}
+                <div className=" items-center justify-center flex flex-col gap-2">
+                    <div className="flex flex-row p-2 gap-2">
+                        {db.slice(0,3).map((property, index) => <PropertyPreview name={property.name} bhk={property.bhk} area={property.area} photo={property.imgurl} id={index}/>)}
+                    </div>
+                    <div className="flex flex-row pl-2 pr-2 pb-2 gap-2">
+                        {db.slice(3,6).map((property, index) => <PropertyPreview name={property.name} bhk={property.bhk} area={property.area} photo={property.imgurl} id={index+3}/>)}
+                    </div>
                 </div>
-                <div className="flex flex-row pl-2 pr-2 pb-2 gap-2">
-                    {db.slice(3,6).map((property, index) => <PropertyPreview name={property.name} bhk={property.bhk} area={property.area} photo={property.imgurl} id={index+3}/>)}
-                </div>
-            </div>
-            {/* ---------------------------------------- */}
+                {/* ---------------------------------------- */}
 
-            <div className='pb-8'>
-            <div className="flex flex-col justify-between bg-[#E79700] w-full p-20">
-                <div className=" lg:text-7xl text-[#04236D]">
-                    <p>Want to find your ideal house?</p>
-                </div>
+                <div className='pb-8'>
+                <div className="flex flex-col justify-between bg-[#E79700] w-full p-20">
+                    <div className=" lg:text-7xl text-[#04236D]">
+                        <p>Want to find your ideal house?</p>
+                    </div>
 
-                <div className='flex'>
-                    <div className='text-[#04236D] text-md'>
-                        <p className='w-[70%] font-bold pt-6 tracking-widest'>
-                            Contact us and we will provide you our expert guidance and assistance in finding your dream house.
-                        </p>
-                        <div className='pt-6 font-bold'>
-                            <p>
-                                Connect with us
+                    <div className='flex'>
+                        <div className='text-[#04236D] text-md'>
+                            <p className='w-[70%] font-bold pt-6 tracking-widest'>
+                                Contact us and we will provide you our expert guidance and assistance in finding your dream house.
                             </p>
-                            <div className='py-2'>
-                                <p className='text-white pb-4'>
-                                    <a href="info@astravant.com">
-                                        info@astravant.com
-                                    </a>
+                            <div className='pt-6 font-bold'>
+                                <p>
+                                    Connect with us
                                 </p>
-                                <p className='text-white'>
-                                    +91 8329 109 390
-                                </p>
+                                <div className='py-2'>
+                                    <p className='text-white pb-4'>
+                                        <a href="info@astravant.com">
+                                            info@astravant.com
+                                        </a>
+                                    </p>
+                                    <p className='text-white'>
+                                        +91 8329 109 390
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                        <div className="flex flex-col items-center gap-8 pt-8">
+                            <div className="flex gap-8 w-full max-w-2xl">
+                                <input
+                                    type="text"
+                                    placeholder="First Name"
+                                    className="flex-1 p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                                />
+                                <input
+                                    type="text"
+                                    placeholder="Last Name"
+                                    className="flex-1 p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                                />
+                            </div>
+
+                            <div className="w-full max-w-2xl">
+                                <input
+                                    type="text"
+                                    placeholder="Phone Number"
+                                    className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                                />
+                            </div>
+
+                            <div className="w-full max-w-2xl">
+                                <input
+                                    type="text"
+                                    placeholder="Property Requirements"
+                                    className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                                />
+                            </div>
+
+                            <div className="w-full max-w-2xl">
+                                <input
+                                    type="text"
+                                    placeholder="Your Budget Range"
+                                    className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                                />
+                            </div>
+                            <div className="w-full max-w-2xl">
+                                <button className=" p-2 pl-8 pr-8 border border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+
+
+                        </div>
                     </div>
-                    <div className="flex flex-col items-center gap-8 pt-8">
-                        <div className="flex gap-8 w-full max-w-2xl">
-                            <input
-                                type="text"
-                                placeholder="First Name"
-                                className="flex-1 p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-                            />
-                            <input
-                                type="text"
-                                placeholder="Last Name"
-                                className="flex-1 p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-                            />
-                        </div>
-
-                        <div className="w-full max-w-2xl">
-                            <input
-                                type="text"
-                                placeholder="Phone Number"
-                                className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-                            />
-                        </div>
-
-                        <div className="w-full max-w-2xl">
-                            <input
-                                type="text"
-                                placeholder="Property Requirements"
-                                className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-                            />
-                        </div>
-
-                        <div className="w-full max-w-2xl">
-                            <input
-                                type="text"
-                                placeholder="Your Budget Range"
-                                className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-                            />
-                        </div>
-                        <div className="w-full max-w-2xl">
-                            <button className=" p-2 pl-8 pr-8 border border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold"
-                            >
-                                Submit
-                            </button>
-                        </div>
-
-
                     </div>
                 </div>
-                </div>
+                <Nsl />
+                <Footer />
+
             </div>
-
-            <Nsl />
-
-            <Footer />
-
-
-
-
-
 
 
         </>

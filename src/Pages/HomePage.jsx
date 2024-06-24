@@ -10,7 +10,7 @@ import Banner from '../Components/homebanner'
 import Navbar2 from '../Components/Navbar2'
 const HomePage = () => {
     return (
-        <>
+        <div className='px-4'>
             <Navbar2 />
             {/* <HomeBannerOne /> */}
             <Banner />
@@ -19,7 +19,7 @@ const HomePage = () => {
             <HeroIndie />
             <Thrust />
             <Nsl />
-        </>
+        </div>
     )
 }
 

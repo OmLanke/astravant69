@@ -7,13 +7,13 @@ import Nsl from '../Components/Nsl'
 
 const ContactUs = () => {
     return (
-        <>
+        <div className='px-4 pb-4'>
             <Navbar />
             <ConUsBanOne />
             <ConUsBanTwo />
             <ConUsBanThree />
             <Nsl />
-        </>
+        </div>
     )
 }
 
