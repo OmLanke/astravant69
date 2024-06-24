@@ -8,8 +8,40 @@ import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
 import "../Pages/Search.css"
 import Footer from '../Components/Footer.jsx'
+import db from '../assets/db.json'
+const PropertyPreview = ({name, bhk, area, photo}) => {
+    return (
+        <div className='flex flex-col gap-4'>
+            <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: `url(${photo})` }}>
+                {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
+                <p className='pl-9 pr-9'>2 BHK</p>
+            </div> */}
+            </div>
 
-
+            <div>
+                <div className='flex justify-between'>
+                    <p>
+                        {name}
+                    </p>
+                    <p>
+                        {bhk} , {area}
+                    </p>
+                </div>
+                <div className='flex justify-between'>
+                    <p>
+                        address
+                    </p>
+                    <p className='flex '>
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStarHalf />
+                    </p>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 const Contact = () => {
     return (
@@ -32,35 +64,7 @@ const Contact = () => {
 
             <div className=" items-center justify-center flex flex-col gap-2">
                 <div className="flex flex-row p-2 gap-2">
-                    <div className='flex flex-col gap-4'>
-                        <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: "url('/ast8.png')" }}>
-                            {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
-                        </div> */}
-                        </div>
-
-                        <div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    Elvis Heights
-                                </p>
-                                <p>
-                                    1-B.H.K , 800sq ft
-                                </p>
-                            </div>
-                            <div className='flex justify-between'>
-                                <p>
-                                    address
-                                </p>
-                                <p className='flex '>
-                                    <FaStarHalf />
-                                    <FaStar />
-                                    <FaStar />
-                                    <FaStar />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <PropertyPreview />
                     <div className='flex flex-col gap-4'>
                         <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: "url('/ast9.png')" }}>
                             {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
