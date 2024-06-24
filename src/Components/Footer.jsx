@@ -8,8 +8,8 @@ import { FaSquareTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-<>                 <div className="flex flex-col justify-between bg-[rgb(0,0,0)] w-full p-20">
-                <div className=" lg:text-4xl text-[white] font-bold">
+<>          <div className="flex flex-col justify-between bg-[rgb(0,0,0)] w-full p-20">
+                <div className=" lg:text-4xl text-[white] font-bold" style={{fontFamily: 'Playfair Display', borderRadius: '20px'}}>
                     <p>Contact Us</p>
                 </div>
 

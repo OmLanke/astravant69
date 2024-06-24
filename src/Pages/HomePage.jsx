@@ -6,12 +6,14 @@ import ApartmentListing from '../Components/ApartmentListing'
 import HeroIndie from '../Components/HeroIndie'
 import Thrust from '../Components/Thrust'
 import Nsl from '../Components/Nsl'
-
+import Banner from '../Components/homebanner'
+import Navbar2 from '../Components/Navbar2'
 const HomePage = () => {
     return (
         <>
-            <Navbar />
-            <HomeBannerOne />
+            <Navbar2 />
+            {/* <HomeBannerOne /> */}
+            <Banner />
             <HomeBannerTwo />
             <ApartmentListing />
             <HeroIndie />
