@@ -8,7 +8,7 @@ const ConBanTwo = () => {
                     <div className="flex flex-row w-full justify-between h-[100vh]">
                         <div className="flex flex-col pl-20 pb-20 pt-20 gap-10">
                             <div className="lg:text-5xl">
-                                <p>Espire Realty group:</p>
+                                <p>AstraVant Realty group:</p>
                                 <p>India's #1 real estate</p>
                                 <p>agency.</p>
                             </div>
