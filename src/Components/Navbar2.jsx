@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import logo from '../assets/image2.png'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -14,11 +15,11 @@ const Navbar2 =() => {
   return (
    
       <nav
-        className="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-gray-50 bg-white border rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
-        <div className="flex items-center justify-between text-blue-gray-900">
+        className="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-gray-50 bg-white border rounded-none shadow-md h-max border-white/80 bg-opacity-40 backdrop-blur-2xl backdrop-saturate-600 lg:px-8 lg:py-4">
+        <div className="flex items-center justify-between text-blue-gray-700">
           <a href="/"
             className="mr-4 block cursor-pointer py-1.5 font-sans text-2xl font-semibold leading-relaxed text-inherit antialiased">
-            Astravant Realty
+            <img src={logo} alt="logo" className="w-20" />
           </a>
           <div className="flex items-center gap-4">
             <div className="hidden mr-4 lg:block">
