@@ -7,9 +7,10 @@ const ApartmentListing = () => {
             <div className="items-center justify-center flex flex-row md:flex-col overflow-x-auto">
                 <div className="flex flex-row p-2 gap-2">
                     <div className="flex items-center p-[155px]" style={{ backgroundImage: "url('/ast8.png')", borderRadius: '35px' }}>
-                        <div className="p-2 border border-2   hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='px-9'>2 BHK</p>
-                        </div>
+                        <DirectionAwareHover imageUrl="url('/ast8.png')">
+                            <p className="font-bold text-xl">In the mountains</p>
+                            <p className="font-normal text-sm">$1299 / night</p>
+                        </DirectionAwareHover>
                     </div>
                     <div className="flex items-center p-[155px]" style={{ backgroundImage: "url('/ast9.png') ", borderRadius: '35px' }}>
                         <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
