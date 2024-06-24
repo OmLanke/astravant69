@@ -14,8 +14,6 @@ const AppRouter = () => {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/search" element={<Search />} />
             <Route path="/propertypage" element={<PropertyPage />} />
-
-
         </Routes>
     );
 };
