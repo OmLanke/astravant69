@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "../util/cn";
+import { DirectionAwareHover } from "../Components/direction-aware-hover";
 
 const CardHome =({name, bhk, area, imgurl, address, parking, price,verified, id})=>{
     return (
         <Link to={`/propertypage/${id}`} className="block rounded-lg p-4 shadow-sm shadow-indigo-100">
-  <img
-    alt=""
-    src={imgurl}
-    className="h-56 w-full rounded-md object-cover"
-  />
+    <div className="">
+      <DirectionAwareHover imageUrl={imgurl} className="">
+        <p>
+          <span className=" px-2 py-1 text-base font-semibold text-white ">
+            {area} sqft
+          </span>
+        </p>
+
+      </DirectionAwareHover>
+    </div>
 
   <div className="mt-2">
     <dl>
