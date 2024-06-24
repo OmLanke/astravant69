@@ -15,7 +15,7 @@ const Navbar2 =() => {
   return (
    
       <nav
-        className="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-gray-50 bg-white border rounded-none shadow-md h-max border-white/80 bg-opacity-40 backdrop-blur-2xl backdrop-saturate-600 lg:px-8 lg:py-4">
+        className="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-gray-50 bg-white border rounded-none shadow-md h-max border-white/80 bg-opacity-40 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
         <div className="flex items-center justify-between text-blue-gray-700">
           <a href="/"
             className="mr-4 block cursor-pointer py-1.5 font-sans text-2xl font-semibold leading-relaxed text-inherit antialiased">
@@ -40,7 +40,7 @@ const Navbar2 =() => {
                   </a>
                 </li>
                 <li className="block p-1 font-sans text-base antialiased font-normal leading-normal text-blue-gray-900 hover:text-brown-600 transition-colors transition-transform duration-500 ease-in-out transform hover:scale-110">
-                  <a href="#" className="flex items-center">
+                  <a href="/contactus" className="flex items-center">
                     Contact Us
                   </a>
                 </li>
