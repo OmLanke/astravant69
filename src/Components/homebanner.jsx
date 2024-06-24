@@ -52,12 +52,12 @@ const Banner =() => {
             </p> */}
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="/search"
                 className="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-gray-900  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 "style={{ transition: 'background-color 0.5s ease' }}
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
+              <a href="/contact" className="text-sm font-semibold leading-6 text-white">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
