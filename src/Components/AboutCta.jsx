@@ -15,7 +15,7 @@ const AboutCta =()=> {
             <h2 id="features-heading" className="font-medium text-gray-500">
             India's #1 
             </h2>
-            <p className="mt-4 text-4xl font-bold tracking-tight text-gray-900">Espire Realty group:India's #1 real estate agency.</p>
+            <p className="mt-4 text-4xl font-bold tracking-tight text-gray-900">AstraVant Realty group:India's #1 real estate agency.</p>
             <p className="mt-4 text-gray-500">
             There is nothing like it ~ anywhere. This is a once-in-a- lifetime opportunity to possess a natural oasis located in the exclusive neighborhood of Port Royal, the ultimate setting for creating a lifestyle of custom luxury. By any measure, Dawn Mckenna is one of America’s most successful, creative, and sought-after luxury real estate agents. Not only is she the No. 1 agent in Hinsdale, Illinois, but she also leads the No. 1 ranked team in lllinois and the Midwest, and No. 4 in the nation among all brokerages, as ranked by the Wall Street Journal Real Trends. Since expanding seven years ago, the Dawn McKenna Group (DMG) holds the number one position in Southwest Florida, Park City, Utah, and Inman named DMG the number one luxury team in the United States in 2023. 
             </p>

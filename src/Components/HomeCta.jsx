@@ -15,7 +15,7 @@ const HomeCta =()=> {
             <h2 id="features-heading" className="font-medium text-gray-500">
             India's #1 
             </h2>
-            <p className="mt-4 text-4xl font-bold tracking-tight text-gray-900">Espire Realty group:India's #1 real estate agency.</p>
+            <p className="mt-4 text-4xl font-bold tracking-tight text-gray-900">AstraVant Realty group:India's #1 real estate agency.</p>
             <p className="mt-4 text-gray-500">
             Welcome to the epitome of luxury living In India- our No.1 real estate destination. Here, we redefine. opulence with our exclusive collection of properties, each crafted to perfoction with meticulous attention to detail.
             </p>
