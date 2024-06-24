@@ -18,7 +18,7 @@ const Navbar2 =() => {
         <div class="flex items-center justify-between text-blue-gray-900">
           <a href="/"
             class="mr-4 block cursor-pointer py-1.5 font-sans text-2xl font-semibold leading-relaxed text-inherit antialiased">
-            Astravant Reality
+            Astravant Realty
           </a>
           <div class="flex items-center gap-4">
             <div class="hidden mr-4 lg:block">
