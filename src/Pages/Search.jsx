@@ -10,6 +10,8 @@ import { FaStarHalf } from "react-icons/fa";
 import "../Pages/Search.css"
 import Footer from '../Components/Footer.jsx'
 import db from '../assets/db.json'
+import Grid from '../Components/Grid'
+import SearchBan from '../Components/SearchBan.jsx'
 const PropertyPreview = ({name, bhk, area, photo, id}) => {
     return (
        <Link to={`/propertypage/${id}`} >
@@ -19,7 +21,6 @@ const PropertyPreview = ({name, bhk, area, photo, id}) => {
                     <p className='pl-9 pr-9'>2 BHK</p>
                 </div> */}
                 </div>
-
                 <div>
                     <div className='flex justify-between'>
                         <p>
@@ -47,34 +48,27 @@ const PropertyPreview = ({name, bhk, area, photo, id}) => {
 }
 
 const Contact = () => {
-    console.log(db.slice(0,4));
     return (
         <>
             <Navbar />
+            
             <div className='px-4 pb-4'>
-                <div className="relative text-white bg-cover flex flex-col bg-center w-full h-screen mb-44" style={{ backgroundImage: "url('/searchBan.png')" }}>
-                    <div className="mx-auto my-auto flex flex-col gap-8">
-                        <div className="text-7xl">
-                            <p>Search By Properties</p>
-                        </div>
-                        {/* <div className="p-2 pl-4 pr-4 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border border-[2px] mb-20 border-white mx-auto">
-                            <p>Contact Us</p>
-                        </div> */}
-
-                    </div>
-
-                </div>
+            <SearchBan/>
+             
                 <SearchByAddress />
+                <div className='p-9'>
+                    <Grid/>
+                </div>
+                
 
-
-                <div className=" items-center justify-center flex flex-col gap-2">
+                {/* <div className=" items-center justify-center flex flex-col gap-2">
                     <div className="flex flex-row p-2 gap-2">
                         {db.slice(0,3).map((property, index) => <PropertyPreview name={property.name} bhk={property.bhk} area={property.area} photo={property.imgurl} id={index}/>)}
                     </div>
                     <div className="flex flex-row pl-2 pr-2 pb-2 gap-2">
                         {db.slice(3,6).map((property, index) => <PropertyPreview name={property.name} bhk={property.bhk} area={property.area} photo={property.imgurl} id={index+3}/>)}
                     </div>
-                </div>
+                </div> */}
                 {/* ---------------------------------------- */}
 
                 <div className='pb-8'>
