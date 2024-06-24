@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 
-const Banner =() => {
+const SearchBan =() => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -80,4 +80,4 @@ const Banner =() => {
   )
 }
 
-export default Banner   
+export default SearchBan   
