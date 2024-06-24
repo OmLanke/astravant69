@@ -14,31 +14,31 @@ const Navbar2 =() => {
   return (
    
       <nav
-        class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-white bg-white border rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
+        class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-gray-50 bg-white border rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
         <div class="flex items-center justify-between text-blue-gray-900">
-          <a href="#"
-            class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
+          <a href="/"
+            class="mr-4 block cursor-pointer py-1.5 font-sans text-2xl font-semibold leading-relaxed text-inherit antialiased">
             Astravant Reality
           </a>
           <div class="flex items-center gap-4">
             <div class="hidden mr-4 lg:block">
               <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-                <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                  <a href="/" class="flex items-center">
+                <li class="block p-1 font-sans text-base antialiased font-normal leading-normal text-blue-gray-900 hover:text-brown-600 transition-colors transition-transform duration-500 ease-in-out transform hover:scale-110">
+                  <a href="/contact" class="flex items-center ">
                   About us
                   </a>
                 </li>
-                <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                  <a href="#" class="flex items-center">
+                <li class="block p-1 font-sans text-base antialiased font-normal leading-normal text-blue-gray-900 hover:text-brown-600 transition-colors transition-transform duration-500 ease-in-out transform hover:scale-110">
+                  <a href="/search" class="flex items-center">
                     Our Services 
                   </a>
                 </li>
-                <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                  <a href="#" class="flex items-center">
+                <li class="block p-1 font-sans text-base antialiased font-normal leading-normal text-blue-gray-900 hover:text-brown-600 transition-colors transition-transform duration-500 ease-in-out transform hover:scale-110">
+                  <a href="/search" class="flex items-center">
                   Search by area
                   </a>
                 </li>
-                <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                <li class="block p-1 font-sans text-base antialiased font-normal leading-normal text-blue-gray-900 hover:text-brown-600 transition-colors transition-transform duration-500 ease-in-out transform hover:scale-110">
                   <a href="#" class="flex items-center">
                     Contact Us
                   </a>
