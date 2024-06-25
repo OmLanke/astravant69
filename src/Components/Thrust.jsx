@@ -36,7 +36,7 @@ const Highlight = ({t1, t2}) => {
 const Thrust = () => {
     return (
         <>
-            <div className="flex flex-col justify-between bg-[#E79700] w-full p-20">
+            <div className="flex flex-col justify-between bg-[#E79700] w-full p-20 mt-1">
                 <div className="mx-auto flex flex-col items-center justify-center text-2xl md:text-4xl xl:text-6xl text-[#001F66]">
                     <p>Holding an taking care of more than</p>
                     <p>10,000+ customers trust</p>

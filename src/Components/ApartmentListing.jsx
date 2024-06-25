@@ -12,7 +12,7 @@ const Card = ({ img, title }) => {
 
 const ApartmentListing = () => {
     return (
-        <div className='w-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 gap-1'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1'>
             <Card img="/ast8.png" title="2 BHK"/>
             <Card img="/ast9.png" title="3 BHK"/>
             <Card img="/ast10.png" title="Penthouse"/>
