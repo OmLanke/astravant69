@@ -64,7 +64,7 @@ const Contact = () => {
         <li key={index} className="overflow-hidden rounded-xl border border-gray-200">
            <Link to={`/propertypage/${index}`} >
           <div className='flex flex-col gap-4'>
-                        <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: "url('/ast8.png')" }}>
+                        <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: `url(${prop.imgurl})` }}>
                             {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
                             <p className='pl-9 pr-9'>2 BHK</p>
                         </div> */}
