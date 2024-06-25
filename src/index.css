@@ -5,3 +5,13 @@
 body{
     margin:auto ;
 }
+
+@font-face {
+    font-family: "Medio";
+    src: url("/fonts/Medio.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "HelmetNeue";
+    src: url("/fonts/HelmetNeue.otf") format("opentype");
+  }

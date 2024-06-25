@@ -3,7 +3,7 @@ import React from 'react'
 const Nsl = () => {
     return (
         <div>
-            <div className="relative bg-cover flex flex-col bg-center w-full h-screen my-auto" style={{ backgroundImage: "url('/tow.png')" }}>
+            <div className="relative bg-cover flex flex-col bg-center w-full h-screen my-auto mt-1" style={{ backgroundImage: "url('/tow.png')" }}>
                 <div className="relative mx-auto my-auto">
                     <div className="flex flex-col md:flex-row justify-between mx-auto">
                         <div className="relative bg-[rgba(29,89,227,0.51)] max-w-md leading-tight gap-4 mx-auto text-white p-4 py-16 flex flex-col justify-center items-center text-center">
