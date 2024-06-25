@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div>
       {show && (
-        <nav className="fixed top-0 left-0 w-full bg-transparent text-white flex justify-between items-center p-4 pl-8 pr-8 z-10">
+        <nav className="fixed top-0 left-0 w-full bg-transparent text-white flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10">
           <a href="/">
             <img src={logo} alt="Logo" className="h-20 " />
           </a>
