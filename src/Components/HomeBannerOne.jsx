@@ -24,7 +24,7 @@ const HomeBannerOne = () => {
                 fontWeight: "lighter",
               }}
             >
-              Meet Reality
+              Meet Realty
             </h2>
           </div>
           <div className="p-6 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border-[4px] mb-20 border-white mx-auto">
