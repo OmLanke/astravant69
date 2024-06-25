@@ -10,7 +10,7 @@ const PP_one = () => {
     const property =db[params.id]
     console.log(property);
     return (
-        <>
+        <div>
             <div className="w-full flex flex-col mx-auto gap-10 bg-white p-8 ">
                 <div className="flex flex-row justify-between font-medium">
                    <Link to= "/search"> <FaArrowLeftLong size={30} /></Link>
@@ -101,7 +101,7 @@ const PP_one = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
 

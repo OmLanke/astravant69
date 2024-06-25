@@ -10,6 +10,7 @@ import "../Pages/Search.css"
 import Footer from '../Components/Footer.jsx'
 import db from '../assets/db.json'
 import { Link } from 'react-router-dom'
+
 const statuses = {
     Paid: 'text-green-700 bg-green-50 ring-green-600/20',
     Withdraw: 'text-gray-600 bg-gray-50 ring-gray-500/10',
@@ -43,12 +44,12 @@ const statuses = {
 
 const Contact = () => {
     return (
-        <>
+        <div>
             <Navbar />
             <div className="relative text-white bg-cover flex flex-col bg-center w-full h-screen mb-44" style={{ backgroundImage: "url('/searchBan.png')" }}>
-                <div className="mx-auto my-auto flex flex-col gap-8">
-                    <div className="text-7xl">
-                        <p>Search By Properties</p>
+                <div className="mx-auto my-auto ">
+                    <div className="text-7xl flex justify-center">
+                        <p className='font-serif'>Search By Properties</p>
                     </div>
                     {/* <div className="p-2 pl-4 pr-4 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border border-[2px] mb-20 border-white mx-auto">
                         <p>Contact Us</p>
@@ -63,7 +64,7 @@ const Contact = () => {
       {db.map((prop ,index) => (
         <li key={index} className="overflow-hidden rounded-xl border border-gray-200">
            <Link to={`/propertypage/${index}`} >
-          <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4'>
                         <div className="flex items-center lg:p-[200px]" style={{ backgroundImage: `url(${prop.imgurl})` }}>
                             {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
                             <p className='pl-9 pr-9'>2 BHK</p>
@@ -193,7 +194,7 @@ const Contact = () => {
 
 
 
-        </>
+        </div>
     )
 }
 
