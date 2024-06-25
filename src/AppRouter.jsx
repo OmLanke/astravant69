@@ -6,6 +6,7 @@ import Contact from './Pages/Contact';
 import Search from './Pages/Search';
 import ContactUs from './Pages/ContactUs';
 import PropertyPage from './Pages/PropertyPage';
+import RentalProp from './Pages/RentalProp';
 const AppRouter = () => {
     return (
         <div className='px-4'>
@@ -15,6 +16,7 @@ const AppRouter = () => {
                 <Route path="/contactus" element={<ContactUs />} />
                 <Route path="/search" element={<Search />} />
                 <Route path="/propertypage/:id" element={<PropertyPage />} />
+                <Route path="/rentalprop" element={<RentalProp />} />
             </Routes>
         </div>
     );
