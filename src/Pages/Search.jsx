@@ -11,6 +11,7 @@ import Footer from '../Components/Footer.jsx'
 import db from '../assets/db.json'
 import { Link } from 'react-router-dom'
 
+
 const statuses = {
     Paid: 'text-green-700 bg-green-50 ring-green-600/20',
     Withdraw: 'text-gray-600 bg-gray-50 ring-gray-500/10',
@@ -50,7 +51,9 @@ const Contact = () => {
                 <div className="mx-auto my-auto ">
                     <div className="text-7xl flex justify-center">
                         <p className='font-serif'>Search By Properties</p>
+                        
                     </div>
+                    
                     {/* <div className="p-2 pl-4 pr-4 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border border-[2px] mb-20 border-white mx-auto">
                         <p>Contact Us</p>
                     </div> */}
