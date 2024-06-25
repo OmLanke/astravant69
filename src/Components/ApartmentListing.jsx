@@ -2,7 +2,7 @@ import React from 'react'
 
 const ApartmentListing = () => {
     return (
-        <>
+        <div>
             <div className=" items-center justify-center flex flex-col">
                 <div className="flex flex-row p-2 gap-2">
                     <div className="flex items-center lg:p-[155px]" style={{ backgroundImage: "url('/ast8.png')" }}>
@@ -39,7 +39,7 @@ const ApartmentListing = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
