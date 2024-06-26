@@ -10,7 +10,7 @@ import RentalProp from './Pages/RentalProp';
 import PropertyListing from './Pages/PropertyListing.jsx'
 const AppRouter = () => {
     return (
-        <div className='px-4'>
+        <div className='px-4 font-helmet'>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/contact" element={<Contact />} />

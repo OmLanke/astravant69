@@ -4,7 +4,7 @@ const Mobile = () => {
   return (
     <div className="block xl:hidden mt-1">
       <div className="flex flex-col w-full justify-start text-white text-center bg-[#001F66] p-4 gap-4">
-        <div className="text-4xl">
+        <div className="text-4xl font-medio">
           <p>Astravant Realty group:</p>
           <p>India's #1 real estate</p>
           <p>agency.</p>
@@ -37,12 +37,12 @@ const Computer = () => {
     <div className="hidden xl:block mt-1">
       <div className="flex flex-row w-full justify-between text-white bg-[#001F66] h-screen">
         <div className="flex flex-col pl-20 pb-20 pt-20 gap-10">
-          <div className="text-5xl">
-            <p>Espire Realty group:</p>
+          <div className="text-5xl font-medio">
+            <p>Astravant Realty group:</p>
             <p>India's #1 real estate</p>
             <p>agency.</p>
           </div>
-          <div className="w-3/5 mt-10 ">
+          <div className="w-3/5 mt-10 font-medio">
             <p>
               Welcome to the epitome of luxury living In India- our No.1 real
               estate destination. Here, we redefine. opulence with our exclusive

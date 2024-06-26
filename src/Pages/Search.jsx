@@ -50,7 +50,7 @@ const Contact = () => {
             <div className="relative text-white bg-cover flex flex-col bg-center w-full h-screen mb-44" style={{ backgroundImage: "url('/searchBan.png')" }}>
                 <div className="mx-auto my-auto ">
                     <div className="text-7xl flex justify-center">
-                        <p className='font-serif'>Search By Properties</p>
+                        <p className='font-medio'>Search By Properties</p>
                         
                     </div>
                     

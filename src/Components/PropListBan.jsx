@@ -22,7 +22,7 @@ const PropListBan = () => {
     return (
         <div className="bg-[url('proplistban.png')] text-white bg-cover p-8 mx-auto flex flex-col bg-center w-full h-screen">
             {show && (
-                <div className="mt-14 text-center lg:text-left text-4xl lg:text-7xl">
+                <div className="mt-14 text-center lg:text-left text-4xl lg:text-7xl font-medio">
                     <p>Want your property to get</p>
                     <p>listed by us?</p>
                 </div>

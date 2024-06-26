@@ -4,7 +4,7 @@ const ConUsBanThree = () => {
     return (
         <>
             <div className="relative bg-white text-[#04236D] items-center justify-center p-16 mx-auto flex flex-col gap-10 bg-center w-full">
-                <div className="mx-auto text-6xl">
+                <div className="mx-auto text-6xl font-medio">
                     <p>Hot Properties Not to Miss</p>
                 </div>
                 <div className="flex flex-row p-2 gap-2 mb-10">

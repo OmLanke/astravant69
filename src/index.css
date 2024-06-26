@@ -12,6 +12,6 @@ body{
   }
   
   @font-face {
-    font-family: "HelmetNeue";
-    src: url("/fonts/HelmetNeue.otf") format("opentype");
+    font-family: "Helmet";
+    src: url("/fonts/Helmet.otf") format("opentype");
   }

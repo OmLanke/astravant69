@@ -113,7 +113,7 @@ const Thrust = () => {
   return (
     <div>
       <div className="flex flex-col justify-between bg-[#E79700] w-full p-20 mt-1">
-        <div className="mx-auto flex flex-col items-center justify-center text-2xl md:text-4xl xl:text-6xl text-[#001F66]">
+        <div className="mx-auto flex flex-col items-center justify-center text-2xl md:text-4xl xl:text-6xl text-[#001F66] font-medio">
           <p>Holding an taking care of more than</p>
           <p>10,000+ customers trust</p>
         </div>
@@ -146,7 +146,7 @@ const Thrust = () => {
           </button>
         </div>
 
-        <div className="flex flex-col md:flex-row my-8 text-[#001F66] justify-between">
+        <div className="flex flex-col md:flex-row my-8 text-[#001F66] justify-between font-medio">
           <Highlight t1="12+" t2="Years of experience in real estate" />
           <Highlight t1="800+" t2="Real estate projects" />
           <Highlight t1="5+" t2="Million sq. ft sold." />

@@ -7,7 +7,7 @@ const Nsl = () => {
                 <div className="relative mx-auto my-auto">
                     <div className="flex flex-col md:flex-row justify-between mx-auto">
                         <div className="relative bg-[rgba(29,89,227,0.51)] max-w-md leading-tight gap-4 mx-auto text-white p-4 py-16 flex flex-col justify-center items-center text-center">
-                            <p className='w-4/5 text-3xl'>Bringing your dream home near to you</p>
+                            <p className='w-4/5 text-3xl font-medio'>Bringing your dream home near to you</p>
                             <p className='w-4/5'>We offer the highest level of integrity,
                                 expertise, and service. The Dawn McKenna
                                 Group is the #1 leading real estate team in

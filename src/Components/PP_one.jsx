@@ -26,7 +26,7 @@ const PP_one = () => {
                     </div>
                 </div>
                 <div className="flex flex-row justify-between gap-14 items-center">
-                    <p className='lg:text-6xl md:text-5xl sm:text-3xl font-medium leading-tight w-1/3'>
+                    <p className='lg:text-6xl md:text-5xl sm:text-3xl font-medium leading-tight w-1/3 font-medio'>
                         {property.name}
                     </p>
                     <div className="w-2/3 h-1 bg-black"></div>

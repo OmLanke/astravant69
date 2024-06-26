@@ -5,7 +5,7 @@ const ConBanOne = () => {
         <div>
             <div className="relative text-white bg-cover flex flex-col bg-center w-full h-screen" style={{ backgroundImage: "url('/concon.png')" }}>
                 <div className="mx-auto my-auto flex flex-col gap-8">
-                    <div className="text-7xl">
+                    <div className="text-7xl font-medio">
                         <p>ASTRAVANT REALTY</p>
                     </div>
                     <div className="mx-auto">

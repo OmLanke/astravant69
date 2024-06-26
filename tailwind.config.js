@@ -6,8 +6,8 @@ export default withMT({
   theme: {
     extend: {
       fontFamily: {
-        medio: ["Medio", "sans-serif"],
-        helmet: ["Helmet", "sans-serif"],
+        medio: ["Medio"],
+        helmet: ["Helmet"],
       },
     },
   },
