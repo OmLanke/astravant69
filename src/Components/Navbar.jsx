@@ -42,8 +42,8 @@ const Navbar = () => {
       {show && (
         <nav
           className={`fixed top-0 left-0 w-full ${
-            isScrolled ? "bg-white bg-opacity-40" : "bg-transparent"
-          } text-white flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10 transition-colors duration-300`}
+            isScrolled ? "bg-gray-200 bg-opacity-90 text-gray-900" : "bg-transparent text-white"
+          } flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10 transition-colors duration-300`}
         >
           <a href="/">
             <img src={logo} alt="Logo" className="h-20 " />
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           <div className="flex items-center space-x-4">
             <div className="flex space-x-4">
-              <a href="/" className="hover:underline font-bold">
+              <a href="/contactus" className="hover:underline font-bold">
                 About us
               </a>
               <a href="/contact" className="hover:underline font-bold">
@@ -196,7 +196,7 @@ const Navbar = () => {
             </a>
             <hr className="my-2 border-indigo-600 border-b-2" />
             <a
-              href="/propertypage"
+              href="/contactus"
               style={{
                 display: "block",
                 padding: "8px 16px",
@@ -209,7 +209,7 @@ const Navbar = () => {
             </a>
             <hr className="my-2 border-indigo-600 border-b-2" />
             <a
-              href="#"
+              href="/rentalprop"
               style={{
                 display: "block",
                 padding: "8px 16px",

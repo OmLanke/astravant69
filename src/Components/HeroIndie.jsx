@@ -2,7 +2,7 @@ import React from "react";
 
 const Mobile = () => {
   return (
-    <div className="block xl:hidden">
+    <div className="block xl:hidden mt-1">
       <div className="flex flex-col w-full justify-start text-white text-center bg-[#001F66] p-4 gap-4">
         <div className="text-4xl">
           <p>Astravant Realty group:</p>
@@ -34,7 +34,7 @@ const Mobile = () => {
 
 const Computer = () => {
   return (
-    <div className="hidden xl:block">
+    <div className="hidden xl:block mt-1">
       <div className="flex flex-row w-full justify-between text-white bg-[#001F66] h-screen">
         <div className="flex flex-col pl-20 pb-20 pt-20 gap-10">
           <div className="text-5xl">

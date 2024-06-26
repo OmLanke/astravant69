@@ -62,7 +62,7 @@ const Contact = () => {
       <Navbar />
       <div
         className="relative text-white bg-cover flex flex-col bg-center w-full h-screen mb-44"
-        style={{ backgroundImage: "url('/rentalprop.svg')" }}
+        style={{ backgroundImage: "url('/rentalproppic.png')" }}
       >
         <div className="mx-auto my-auto ">
           <div className="text-7xl flex justify-center">
