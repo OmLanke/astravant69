@@ -7,6 +7,7 @@ import Search from './Pages/Search';
 import ContactUs from './Pages/ContactUs';
 import PropertyPage from './Pages/PropertyPage';
 import RentalProp from './Pages/RentalProp';
+import PropertyListing from './Pages/PropertyListing.jsx'
 const AppRouter = () => {
     return (
         <div className='px-4'>
@@ -17,6 +18,7 @@ const AppRouter = () => {
                 <Route path="/search" element={<Search />} />
                 <Route path="/propertypage/:id" element={<PropertyPage />} />
                 <Route path="/rentalprop" element={<RentalProp />} />
+                <Route path="/propertylisting" element={<PropertyListing />} />
             </Routes>
         </div>
     );

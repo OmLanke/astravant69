@@ -51,7 +51,7 @@ const Navbar = () => {
 
           <div className="flex items-center space-x-4">
             <div className="flex space-x-4">
-              <a href="/contactus" className="hover:underline font-bold">
+              <a href="/aboutus" className="hover:underline font-bold">
                 About us
               </a>
               <a href="/contact" className="hover:underline font-bold">
@@ -196,7 +196,7 @@ const Navbar = () => {
             </a>
             <hr className="my-2 border-indigo-600 border-b-2" />
             <a
-              href="/contactus"
+              href="/propertylisting"
               style={{
                 display: "block",
                 padding: "8px 16px",
