@@ -4,6 +4,7 @@ import logo from "../assets/image-2-2.png";
 const Navbar = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const [show, setShow] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
@@ -18,31 +19,48 @@ const Navbar = () => {
       }
     };
 
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
     handleResize(); // Set initial state
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <div>
       {show && (
-        <nav className="fixed top-0 left-0 w-full bg-transparent text-white flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10">
+        <nav
+          className={`fixed top-0 left-0 w-full ${
+            isScrolled ? "bg-white bg-opacity-40" : "bg-transparent"
+          } text-white flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10 transition-colors duration-300`}
+        >
           <a href="/">
             <img src={logo} alt="Logo" className="h-20 " />
           </a>
 
           <div className="flex items-center space-x-4">
             <div className="flex space-x-4">
-              <a href="/" className="hover:underline">
+              <a href="/" className="hover:underline font-bold">
                 About us
               </a>
-              <a href="/contact" className="hover:underline">
+              <a href="/contact" className="hover:underline font-bold">
                 Our services
               </a>
-              <a href="/search" className="hover:underline">
-                Search by area
+              <a href="/search" className="hover:underline font-bold">
+                Search by Area
               </a>
-              <a href="/contactus" className="hover:underline">
+              <a href="/contactus" className="hover:underline font-bold">
                 Contact Us
               </a>
             </div>
@@ -104,7 +122,7 @@ const Navbar = () => {
             position: "fixed",
             top: 0,
             right: 0,
-            width: "250px",
+            width: "300px",
             height: "100%",
             boxShadow: "-2px 0 5px rgba(0, 0, 0, 0.5)",
             zIndex: 50,
@@ -124,7 +142,7 @@ const Navbar = () => {
             }}
           >
             <svg
-              className="w-6 h-6"
+              className="px-5  h-9"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -143,11 +161,10 @@ const Navbar = () => {
               href="/"
               style={{
                 display: "block",
-                padding: "8px 16px",
                 textDecoration: "none",
-                color: "#000",
+                color: "#04236D",
               }}
-              className="hover:bg-gray-200"
+              className="hover:bg-gray-200 font-bold text-center"
             >
               Home
             </a>
@@ -158,9 +175,9 @@ const Navbar = () => {
                 display: "block",
                 padding: "8px 16px",
                 textDecoration: "none",
-                color: "#000",
+                color: "#04236D",
               }}
-              className="hover:bg-gray-200"
+              className="hover:bg-gray-200 font-bold text-center"
             >
               Our services
             </a>
@@ -171,9 +188,9 @@ const Navbar = () => {
                 display: "block",
                 padding: "8px 16px",
                 textDecoration: "none",
-                color: "#000",
+                color: "#04236D",
               }}
-              className="hover:bg-gray-200"
+              className="hover:bg-gray-200 font-bold text-center"
             >
               Search for properties
             </a>
@@ -184,9 +201,9 @@ const Navbar = () => {
                 display: "block",
                 padding: "8px 16px",
                 textDecoration: "none",
-                color: "#000",
+                color: "#04236D",
               }}
-              className="hover:bg-gray-200"
+              className="hover:bg-gray-200 font-bold text-center"
             >
               Want to get your property listed?
             </a>
@@ -197,9 +214,9 @@ const Navbar = () => {
                 display: "block",
                 padding: "8px 16px",
                 textDecoration: "none",
-                color: "#000",
+                color: "#04236D",
               }}
-              className="hover:bg-gray-200"
+              className="hover:bg-gray-200 font-bold text-center"
             >
               Rental Properties
             </a>
@@ -210,9 +227,9 @@ const Navbar = () => {
                 display: "block",
                 padding: "8px 16px",
                 textDecoration: "none",
-                color: "#000",
+                color: "#04236D",
               }}
-              className="hover:bg-gray-200"
+              className="hover:bg-gray-200 font-bold text-center"
             >
               Contact Us
             </a>
