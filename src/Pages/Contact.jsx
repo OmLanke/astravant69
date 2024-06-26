@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar'
 import ConBanOne from '../Components/ConBanOne'
 import ConBanTwo from '../Components/ConBanTwo'
 import Nsl from '../Components/Nsl'
+import Footer from '../Components/Footer.jsx'
 
 const Contact = () => {
     return (
@@ -11,6 +12,7 @@ const Contact = () => {
             <ConBanOne />
             <ConBanTwo />
             <Nsl />
+            <Footer />
         </>
     )
 }

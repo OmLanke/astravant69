@@ -6,6 +6,7 @@ import ApartmentListing from '../Components/ApartmentListing'
 import HeroIndie from '../Components/HeroIndie'
 import Thrust from '../Components/Thrust'
 import Nsl from '../Components/Nsl'
+import Footer from '../Components/Footer.jsx'
 
 const HomePage = () => {
     return (
@@ -17,6 +18,7 @@ const HomePage = () => {
             <HeroIndie />
             <Thrust />
             <Nsl />
+            <Footer />
         </>
     )
 }

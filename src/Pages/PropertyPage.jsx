@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import PP_one from '../Components/PP_one'
+import Footer from '../Components/Footer.jsx'
 const PropertyPage = () => {
     return (
         <>
@@ -8,6 +9,7 @@ const PropertyPage = () => {
                 <Navbar />
             </div>
             <PP_one />
+            <Footer />
         </>
     )
 }

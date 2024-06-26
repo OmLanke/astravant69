@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar'
 import ConUsBanTwo from '../Components/ConUsBanTwo'
 import ConUsBanThree from '../Components/ConUsBanThree'
 import Nsl from '../Components/Nsl'
+import Footer from '../Components/Footer.jsx'
 
 const ContactUs = () => {
     return (
@@ -13,6 +14,7 @@ const ContactUs = () => {
             <ConUsBanTwo />
             <ConUsBanThree />
             <Nsl />
+            <Footer />
         </>
     )
 }
