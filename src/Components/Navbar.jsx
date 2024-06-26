@@ -4,6 +4,7 @@ import logo from "../assets/image-2-2.png";
 const Navbar = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const [show, setShow] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
@@ -18,15 +19,32 @@ const Navbar = () => {
       }
     };
 
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
     handleResize(); // Set initial state
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <div>
       {show && (
-        <nav className="fixed top-0 left-0 w-full bg-transparent text-white flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10">
+        <nav
+          className={`fixed top-0 left-0 w-full ${
+            isScrolled ? "bg-white bg-opacity-40" : "bg-transparent"
+          } text-white flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10 transition-colors duration-300`}
+        >
           <a href="/">
             <img src={logo} alt="Logo" className="h-20 " />
           </a>
