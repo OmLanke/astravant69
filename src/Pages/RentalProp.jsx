@@ -1,65 +1,14 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import ConBanTwo from "../Components/ConBanTwo";
-import Nsl from "../Components/Nsl";
 import SearchByAddress from "../Components/SearchByAddress.jsx";
-import ApartmentListing from "../Components/ApartmentListing.jsx";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
 import "../Pages/Search.css";
-import Footer from "../Components/Footer.jsx";
 import db from "../assets/db.json";
 import { Link } from "react-router-dom";
-
-const statuses = {
-  Paid: "text-green-700 bg-green-50 ring-green-600/20",
-  Withdraw: "text-gray-600 bg-gray-50 ring-gray-500/10",
-  Overdue: "text-red-700 bg-red-50 ring-red-600/10",
-};
-const clients = [
-  {
-    id: 1,
-    name: "Tuple",
-    imageUrl: "https://tailwindui.com/img/logos/48x48/tuple.svg",
-    lastInvoice: {
-      date: "December 13, 2022",
-      dateTime: "2022-12-13",
-      amount: "$2,000.00",
-      status: "Overdue",
-    },
-  },
-  {
-    id: 2,
-    name: "SavvyCal",
-    imageUrl: "https://tailwindui.com/img/logos/48x48/savvycal.svg",
-    lastInvoice: {
-      date: "January 22, 2023",
-      dateTime: "2023-01-22",
-      amount: "$14,000.00",
-      status: "Paid",
-    },
-  },
-  {
-    id: 3,
-    name: "Reform",
-    imageUrl: "https://tailwindui.com/img/logos/48x48/reform.svg",
-    lastInvoice: {
-      date: "January 23, 2023",
-      dateTime: "2023-01-23",
-      amount: "$7,600.00",
-      status: "Paid",
-    },
-  },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const Contact = () => {
   return (
     <div>
-      <Navbar />
       <div
         className="relative text-white bg-cover flex flex-col bg-center w-full h-screen mb-44"
         style={{ backgroundImage: "url('/rentalproppic.png')" }}
@@ -151,12 +100,12 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="flex-1 p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="flex-1 p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
               </div>
 
@@ -164,7 +113,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Phone Number"
-                  className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
               </div>
 
@@ -172,7 +121,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Property Requirements"
-                  className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
               </div>
 
@@ -180,11 +129,11 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Your Budget Range"
-                  className="w-full p-2 border border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
               </div>
               <div className="w-full max-w-2xl">
-                <button className=" p-2 pl-8 pr-8 border border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
+                <button className=" p-2 pl-8 pr-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
                   Submit
                 </button>
               </div>
@@ -192,9 +141,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Nsl />
-
-      <Footer />
     </div>
   );
 };
