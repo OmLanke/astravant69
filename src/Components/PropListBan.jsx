@@ -62,7 +62,7 @@ const PropListBan = () => {
                         placeholder="Description"
                         className="p-3 outline-none border-2 text-white border-white bg-transparent resize-none placeholder-white"
                     ></textarea>
-                    <button className="border-2 border-[#E79700] p-3 w-32 self-center lg:self-start" type="submit">
+                    <button className="border-2 border-[#E79700] p-3 w-32 font-semibold self-center lg:self-start" type="submit">
                         Submit
                     </button>
                 </div>
