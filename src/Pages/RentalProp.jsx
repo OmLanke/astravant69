@@ -14,7 +14,7 @@ const Contact = () => {
         style={{ backgroundImage: "url('/rentalproppic.png')" }}
       >
         <div className="mx-auto my-auto ">
-          <div className="text-7xl flex justify-center">
+          <div className="text-7xl flex justify-center text-center">
             <p className="font-medio">Rental Properties</p>
           </div>
 
@@ -74,14 +74,13 @@ const Contact = () => {
       {/* ---------------------------------------- */}
 
       <div className="pb-8">
-        <div className="flex flex-col justify-between bg-[#E79700] w-full p-20 md:p-10 sm:p-6">
-          <div className="lg:text-7xl text-[#04236D]">
+        <div className="flex flex-col justify-between bg-[#E79700] w-full p-4 sm:p-6 md:p-10 lg:p-20">
+          <div className="text-3xl sm:text-4xl lg:text-7xl text-[#04236D]">
             <p>Want to find your ideal house?</p>
           </div>
-
-          <div className="flex flex-wrap md:flex-nowrap sm:flex-wrap">
-            <div className="text-[#04236D] text-md w-full md:w-1/2 sm:w-full">
-              <p className="w-[70%] font-bold pt-6 tracking-widest">
+          <div className="flex flex-col lg:flex-row mt-6 lg:mt-10">
+            <div className="text-[#04236D] text-md w-full lg:w-1/2 mb-6 lg:mb-0">
+              <p className="w-full lg:w-[70%] font-bold pt-4 lg:pt-6 tracking-wide sm:tracking-widest">
                 Contact us and we will provide you our expert guidance and
                 assistance in finding your dream house.
               </p>
@@ -89,54 +88,43 @@ const Contact = () => {
                 <p>Connect with us</p>
                 <div className="py-2">
                   <p className="text-white pb-4">
-                    <a href="info@astravant.com">info@astravant.com</a>
+                    <a href="mailto:info@astravant.com">info@astravant.com</a>
                   </p>
                   <p className="text-white">+91 8329 109 390</p>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-8 pt-8 w-full md:w-1/2 sm:w-full">
-              <div className="flex flex-wrap gap-8 w-full max-w-2xl">
+            <div className="flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 w-full lg:w-1/2">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
               </div>
-
-              <div className="w-full max-w-2xl">
-                <input
-                  type="text"
-                  placeholder="Phone Number"
-                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-                />
-              </div>
-
-              <div className="w-full max-w-2xl">
-                <input
-                  type="text"
-                  placeholder="Property Requirements"
-                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-                />
-              </div>
-
-              <div className="w-full max-w-2xl">
-                <input
-                  type="text"
-                  placeholder="Your Budget Range"
-                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-                />
-              </div>
-              <div className="w-full max-w-2xl">
-                <button className=" p-2 pl-8 pr-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
-                  Submit
-                </button>
-              </div>
+              <input
+                type="text"
+                placeholder="Phone Number"
+                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+              />
+              <input
+                type="text"
+                placeholder="Property Requirements"
+                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+              />
+              <input
+                type="text"
+                placeholder="Your Budget Range"
+                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+              />
+              <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
+                Submit
+              </button>
             </div>
           </div>
         </div>
