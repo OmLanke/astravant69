@@ -72,7 +72,7 @@ const Footer = () => {
                     />
                 </div>
                 <div className="w-full max-w-2xl">
-                    <button className=" p-2 pl-8 pr-8 border border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold"
+                    <button className=" p-2 pl-8 pr-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold"
                     >
                         Submit
                     </button>

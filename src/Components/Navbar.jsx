@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/image-2-2.png";
 
 const Navbar = () => {
@@ -45,24 +46,24 @@ const Navbar = () => {
             isScrolled ? "bg-gray-200 bg-opacity-90 text-gray-900" : "bg-transparent text-white"
           } flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10 transition-colors duration-300`}
         >
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="Logo" className="h-20 " />
-          </a>
+          </Link>
 
           <div className="flex items-center space-x-4">
             <div className="flex space-x-4">
-              <a href="/aboutus" className="hover:underline font-bold">
+              <Link to="/aboutus" className="hover:underline font-bold">
                 About us
-              </a>
-              <a href="/contact" className="hover:underline font-bold">
+              </Link>
+              <Link to="/contact" className="hover:underline font-bold">
                 Our services
-              </a>
-              <a href="/search" className="hover:underline font-bold">
+              </Link>
+              <Link to="/search" className="hover:underline font-bold">
                 Search by Area
-              </a>
-              <a href="/contactus" className="hover:underline font-bold">
+              </Link>
+              <Link to="/contactus" className="hover:underline font-bold">
                 Contact Us
-              </a>
+              </Link>
             </div>
             <button
               onClick={toggleSideNav}
@@ -157,8 +158,8 @@ const Navbar = () => {
             </svg>
           </button>
           <div style={{ padding: "16px", width: "100%" }}>
-            <a
-              href="/"
+            <Link
+              to="/"
               style={{
                 display: "block",
                 textDecoration: "none",
@@ -167,10 +168,10 @@ const Navbar = () => {
               className="hover:bg-gray-200 font-bold text-center"
             >
               Home
-            </a>
+            </Link>
             <hr className="my-2 border-indigo-600 border-b-2" />
-            <a
-              href="#"
+            <Link
+              to="#"
               style={{
                 display: "block",
                 padding: "8px 16px",
@@ -180,10 +181,10 @@ const Navbar = () => {
               className="hover:bg-gray-200 font-bold text-center"
             >
               Our services
-            </a>
+            </Link>
             <hr className="my-2 border-indigo-600 border-b-2" />
-            <a
-              href="/search"
+            <Link
+              to="/search"
               style={{
                 display: "block",
                 padding: "8px 16px",
@@ -193,10 +194,10 @@ const Navbar = () => {
               className="hover:bg-gray-200 font-bold text-center"
             >
               Search for properties
-            </a>
+            </Link>
             <hr className="my-2 border-indigo-600 border-b-2" />
-            <a
-              href="/propertylisting"
+            <Link
+              to="/propertylisting"
               style={{
                 display: "block",
                 padding: "8px 16px",
@@ -206,9 +207,9 @@ const Navbar = () => {
               className="hover:bg-gray-200 font-bold text-center"
             >
               Want to get your property listed?
-            </a>
+            </Link>
             <hr className="my-2 border-indigo-600 border-b-2" />
-            <a
+            <Link
               href="/rentalprop"
               style={{
                 display: "block",
@@ -219,10 +220,10 @@ const Navbar = () => {
               className="hover:bg-gray-200 font-bold text-center"
             >
               Rental Properties
-            </a>
+            </Link>
             <hr className="my-2 border-indigo-600 border-b-2" />
-            <a
-              href="/contactus"
+            <Link
+              to="/contactus"
               style={{
                 display: "block",
                 padding: "8px 16px",
@@ -232,7 +233,7 @@ const Navbar = () => {
               className="hover:bg-gray-200 font-bold text-center"
             >
               Contact Us
-            </a>
+            </Link>
             <hr className="my-2 border-indigo-600 border-b-2" />
           </div>
         </div>
