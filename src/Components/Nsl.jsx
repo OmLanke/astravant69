@@ -23,7 +23,7 @@ const Nsl = () => {
                             <p className='text-2xl'>NEWSLETTER</p>
                             <p className='mx-auto leading-tight'>For exclusive news and market updates, sign up for our newsletter.</p>
                             <input type="email" className='border-2 mx-auto outline-none border-r-white p-3 bg-[rgba(29,89,227,0.31)]' placeholder='Your Email' name="" id="" />
-                            <button className='border-[2px] px-6 py-2 hover:bg-white transition duration-500 hover:text-[#001F66] border-white text-center mx-auto mt-8 mb-7'>Submit</button>
+                            <button className='border-[2px] px-6 py-3 hover:bg-white transition duration-500 hover:text-[#001F66] border-white text-center mx-auto  mb-3'>Submit</button>
                         </div>
                     </div>
                 </div>

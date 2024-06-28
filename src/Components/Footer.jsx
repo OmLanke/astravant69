@@ -8,7 +8,7 @@ import { FaSquareTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-  <>
+  <div>
     <div className="flex flex-col justify-between bg-[rgb(0,0,0)] w-full p-20 mt-1 mb-4">
         <div className=" lg:text-4xl text-[white] font-bold font-medio">
             <p>Contact Us</p>
@@ -80,7 +80,7 @@ const Footer = () => {
             </div>
         </div>
     </div>
-    </>
+    </div>
 )}
 
 export default Footer
