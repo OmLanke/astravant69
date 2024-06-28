@@ -35,7 +35,7 @@ const reviewsData = [
   // More reviews can be added here
 ];
 
-const Card = ({ name, review, date, stars }) => {
+const Card = ({ stars, name, review, date  }) => {
   return (
     <div className="bg-white shadow-lg p-4 pl-8 pr-8 rounded-3xl gap-4 flex flex-col hover:shadow-xl">
       <div className="flex flex-row justify-between items-center">
@@ -43,35 +43,35 @@ const Card = ({ name, review, date, stars }) => {
           <img src="charman.png" className="rounded-full w-9 h-9" alt="" />
           <p>{name}</p>
         </div>
-        <div className="flex flex-row gap-1">
-          {[...Array(stars)].map((_, i) => (
-            <svg
-              key={`filled-star-${i}`}
-              className="text-[#001F66] w-5 h-5"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 .587l3.668 7.568L24 9.751l-6 5.901 1.421 8.548L12 19.412l-7.421 4.788L6 15.652 0 9.751l8.332-1.596L12 .587z" />
-            </svg>
-          ))}
-          {[...Array(5 - stars)].map((_, i) => (
-            <svg
-              key={`empty-star-${i}`}
-              className="text-gray-500 w-5 h-5"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 .587l3.668 7.568L24 9.751l-6 5.901 1.421 8.548L12 19.412l-7.421 4.788L6 15.652 0 9.751l8.332-1.596L12 .587z" />
-            </svg>
-          ))}
-        </div>
       </div>
       <div className="leading-tight">
         <p>{review}</p>
       </div>
       <p className="text-gray-500 text-xs">{date}</p>
+      <div className="flex flex-row gap-1">
+        {[...Array(stars)].map((_, i) => (
+          <svg
+            key={`filled-star-${i}`}
+            className="text-[#001F66] w-5 h-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 .587l3.668 7.568L24 9.751l-6 5.901 1.421 8.548L12 19.412l-7.421 4.788L6 15.652 0 9.751l8.332-1.596L12 .587z" />
+          </svg>
+        ))}
+        {[...Array(5 - stars)].map((_, i) => (
+          <svg
+            key={`empty-star-${i}`}
+            className="text-gray-500 w-5 h-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 .587l3.668 7.568L24 9.751l-6 5.901 1.421 8.548L12 19.412l-7.421 4.788L6 15.652 0 9.751l8.332-1.596L12 .587z" />
+          </svg>
+        ))}
+      </div>
     </div>
   );
 };
