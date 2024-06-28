@@ -70,7 +70,7 @@ const SearchByAddress = () => {
       {/* Display search results */}
       <div className="mx-auto max-w-2xl sm:px-6 lg:px-8">
         {searchResults.map((item) => (
-          <Link to="/details" key={item.id || item.name}>
+          <Link to={`/propertypage/`} key={item.id || item.name}>
             <div className="border-b py-4 flex">
               <div className="flex-shrink-0 mr-4">
                 <img

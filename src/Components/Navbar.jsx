@@ -43,7 +43,9 @@ const Navbar = () => {
       {show && (
         <nav
           className={`fixed top-0 left-0 w-full ${
-            isScrolled ? "bg-gray-200 bg-opacity-90 text-gray-900" : "bg-transparent text-white"
+            isScrolled
+              ? "bg-gray-200 bg-opacity-90 text-gray-900"
+              : "bg-transparent text-white"
           } flex border-t-[16px] border-white justify-between items-center p-4 pl-8 pr-8 z-10 transition-colors duration-300`}
         >
           <Link to="/">
@@ -210,7 +212,7 @@ const Navbar = () => {
             </Link>
             <hr className="my-2 border-indigo-600 border-b-2" />
             <Link
-              href="/rentalprop"
+              to="/RentalProp"
               style={{
                 display: "block",
                 padding: "8px 16px",
