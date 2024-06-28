@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import db from "../assets/db.json";
-// import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SearchByAddress = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -15,7 +15,6 @@ const SearchByAddress = () => {
         item.bhk.toLowerCase().includes(text) ||
         item.area.toLowerCase().includes(text) ||
         item.price.toLowerCase().includes(text)
-
     );
     setSearchResults(filteredResults);
   };
@@ -68,15 +67,13 @@ const SearchByAddress = () => {
           </div>
         </div>
       </div>
-
       {/* Display search results */}
       <div className="mx-auto max-w-2xl sm:px-6 lg:px-8">
-        {searchResults.map((item, index) => (
-          <link to="/details">
-            <div key={index} className="border-b py-4 flex">
+        {searchResults.map((item) => (
+          <Link to="/details" key={item.id || item.name}>
+            <div className="border-b py-4 flex">
               <div className="flex-shrink-0 mr-4">
                 <img
-                  
                   src={item.imgurl}
                   alt={item.name}
                   className="w-24 h-24 object-cover rounded"
@@ -91,7 +88,7 @@ const SearchByAddress = () => {
                 <p>{item.description}</p>
               </div>
             </div>
-          </link>  
+          </Link>
         ))}
       </div>
     </div>
