@@ -20,14 +20,14 @@ const PropListBan = () => {
     }, []);
 
     return (
-        <div className="bg-[url('proplistban.png')] text-white bg-cover p-8 mx-auto flex flex-col bg-center w-full h-screen">
+        <div className="bg-[url('proplistban.png')] text-white bg-cover p-8 mt-1 mx-auto flex flex-col bg-center w-full h-screen">
             {show && (
                 <div className="mt-14 text-center lg:text-left text-4xl lg:text-7xl font-medio">
                     <p>Want your property to get</p>
                     <p>listed by us?</p>
                 </div>
             )}
-            <div className="flex flex-col lg:flex-row lg:pt-24 pt-10 gap-10 lg:gap-56">
+            <div className="flex flex-col lg:flex-row lg:pt-24  pt-10 gap-10 lg:gap-56">
                 <div className="flex flex-col gap-4 text-xl lg:text-3xl text-center lg:text-left">
                     <p>Just fill up the form and sit back and relax.</p>
                     <p>We will be in touch with you shortly.</p>

@@ -12,18 +12,22 @@ const PP_one = () => {
     return (
         <div>
             <div className="w-full flex flex-col mx-auto gap-10 bg-white p-8 ">
-                <div className="flex flex-row justify-between font-medium">
-                   <Link to= "/search"> <FaArrowLeftLong size={30} /></Link>
-                   
-                    <div className="flex flex-row gap-6  items-center text-black">
+                <div className="flex flex-col sm:flex-row justify-between font-medium">
+                    <Link to="/search">
+                        <FaArrowLeftLong size={30} />
+                    </Link>
+
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-black">
                         <p>Property description</p>
                         <p>Amenities and features</p>
                         <p>Other Property Details</p>
                     </div>
+
                     <div className="flex flex-row justify-center items-center">
                         <MdOutlineIosShare />
                         <p>Share</p>
                     </div>
+                    
                 </div>
                 <div className="flex flex-row justify-between gap-14 items-center">
                     <p className='lg:text-6xl md:text-5xl sm:text-3xl font-medium leading-tight w-1/3 font-medio'>
