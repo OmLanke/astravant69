@@ -11,17 +11,12 @@ const PP_one = () => {
     console.log(property);
     return (
         <div className='flex flex-col items-center justify-center'>
+            <div className='h-32 w-full bg-gray-600'/>
             <div className="w-full flex flex-col  gap-10 bg-white p-8 ">
                 <div className="flex flex-col sm:flex-row justify-between font-medium">
                     <Link to="/search">
                         <FaArrowLeftLong size={30} />
                     </Link>
-
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-black">
-                        <p>Property description</p>
-                        <p>Amenities and features</p>
-                        <p>Other Property Details</p>
-                    </div>
 
                     <div className="flex flex-row justify-center items-center">
                         <MdOutlineIosShare />
@@ -30,15 +25,15 @@ const PP_one = () => {
 
                 </div>
                 <div className="flex flex-row justify-between gap-10 md:gap-5 sm:gap-2 items-center">
-                    <p className='lg:text-5xl md:text-4xl sm:text-3xl font-medium w-2/5 leading-tight font-medium'>
+                    <p className='lg:text-5xl md:text-4xl sm:text-3xl font-medium w-2/5 leading-tight'>
                         {property.name}
                     </p>
                     <div className="w-1/2 h-[2px] bg-black"></div>
                     <p className='w-1/6 lg:text-3xl md:text-2xl sm:text-xl'>₹{property.price}</p>
 
                 </div>
-                <div className="flex flex-row justify-between lg:text-base text-xs w-full gap-4">
-                    <img src={property.imgurl} className='w-1/2' alt="" />
+                <div className="flex flex-col sm:flex-row justify-between lg:text-base text-xs w-full gap-4">
+                    <img src={property.imgurl} className='w-full sm:w-1/2' alt="" />
                     <div className="flex flex-col leading-none w-full gap-6">
                         <div className="flex flex-row gap-2 justify-between items-center ">
                             <div className="flex flex-col w-1/2">
@@ -49,10 +44,10 @@ const PP_one = () => {
                                     </svg>
                                     <p>{property.ready}</p>
                                 </div>
-                                <div className="w-3/4 h-1 mt-2 bg-black"></div>
+                                <div className="w-3/4 h-1 bg-black"></div>
                             </div>
                             <div className="flex flex-col w-1/2">
-                                <div className="flex flex-row gap-1 pb-2 items-center justify-start lg:text-xl">
+                                <div className="flex flex-row gap-1 pb-3 items-center justify-start lg:text-xl">
                                     <div className="p-2 rounded-full border border-[4px] border-blue-gray-800 ">
 
                                         <svg className='w-2' viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,12 +69,12 @@ const PP_one = () => {
                                         <rect x="1.92171" y="1.92171" width="40.1566" height="40.1566" stroke="black" stroke-width="3.84342" />
                                     </svg>
 
-                                    <p>{property.beddrooms} Bedrooms</p>
+                                    <p>{property.bedrooms} Bedrooms</p>
                                 </div>
                                 <div className="w-3/4 h-1 bg-black"></div>
                             </div>
                             <div className="flex flex-col w-1/2">
-                                <div className="flex flex-row gap-1 pb-2 pt-1 items-center justify-start lg:text-xl">
+                                <div className="flex flex-row gap-1 items-center justify-start lg:text-xl">
 
                                     <svg className='w-12' viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M46.4224 24.5648L43.4681 19.6414H44.1554C45.058 19.6414 45.7964 18.903 45.7964 18.0005C45.7964 17.0979 45.058 16.3595 44.1554 16.3595H41.9675C41.9483 16.3595 41.9304 16.3646 41.9113 16.3653L40.0734 9.98162C39.6717 8.58428 38.3748 7.60779 36.9197 7.60779H13.1025C11.6475 7.60779 10.3505 8.58423 9.94882 9.98107L8.11023 16.3652C8.09138 16.3645 8.07368 16.3595 8.05468 16.3595H5.86678C4.96423 16.3595 4.22581 17.0979 4.22581 18.0004C4.22581 18.903 4.96423 19.6414 5.86678 19.6414H6.55385L3.59978 24.5653C3.29346 25.0753 3.1317 25.6589 3.13184 26.2538V33.8154C3.13184 35.6251 4.60397 37.0973 6.41372 37.0973H7.5077V40.299C7.5077 41.4064 8.4053 42.304 9.51262 42.304H10.9726C12.0799 42.304 12.9775 41.4064 12.9775 40.299V37.0973H37.0447V40.085C37.0447 41.1669 37.9217 42.0439 39.0035 42.0439H40.5556C41.6375 42.0439 42.5145 41.1669 42.5145 40.085V37.0973H43.6085C45.4182 37.0973 46.8903 35.6251 46.8903 33.8154V26.2538C46.8904 25.6588 46.7287 25.0749 46.4224 24.5648ZM44.7024 33.8154C44.7024 34.4185 44.2121 34.9094 43.6085 34.9094H6.41377C5.81019 34.9094 5.31979 34.4185 5.31979 33.8154V26.2538C5.32006 26.0555 5.37396 25.861 5.47577 25.6908L9.53647 18.9219C9.6807 18.6815 9.79394 18.4214 9.87513 18.1442L12.0513 10.5863C12.1848 10.1205 12.6175 9.79574 13.1025 9.79574H36.9197C37.4047 9.79574 37.8374 10.1205 37.9709 10.5869L40.1471 18.1442L40.1481 18.149C40.2278 18.4208 40.3416 18.6814 40.4868 18.9246L44.5464 25.6903C44.6482 25.8607 44.7021 26.0553 44.7024 26.2538V33.8154Z" fill="black" />
