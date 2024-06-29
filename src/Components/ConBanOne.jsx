@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ConBanOne = () => {
     return (
@@ -13,7 +14,9 @@ const ConBanOne = () => {
                         <p>Email- infor@astravant.com</p>
                     </div>
                     <div className="p-2 pl-4 pr-4 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border border-[2px] mb-20 border-white mx-auto">
-                        <p>Contact Us</p>
+                        <Link to="/contactus">
+                            <p>Contact Us</p>
+                        </Link>
                     </div>
 
                 </div>

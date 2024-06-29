@@ -20,7 +20,7 @@ const AppRouter = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/aboutus" element={<Contact />} />
                 <Route path="/contactus" element={<ContactUs />} />
                 <Route path="/search" element={<Search />} />
                 <Route path="/propertypage/:id" element={<PropertyPage />} />

@@ -5,7 +5,7 @@ const PropertyPage = () => {
     return (
         <>
             <PP_one />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

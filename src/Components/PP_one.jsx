@@ -92,7 +92,7 @@ const PP_one = () => {
                             </div>
                         </div>
                         <div className="w-5/6">
-                            <p>{property.description}</p>
+                            <p className='text-xl'><span className='font-semibold'>Description:</span> {property.description}</p>
                         </div>
                     </div>
                 </div>
