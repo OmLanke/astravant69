@@ -11,17 +11,12 @@ const PP_one = () => {
     console.log(property);
     return (
         <div className='flex flex-col items-center justify-center'>
-            <div className='h-32 w-full bg-gray-600'/>
+            <div className='h-20 sm:h-32 w-full bg-gray-600'/>
             <div className="w-full flex flex-col  gap-10 bg-white p-8 ">
                 <div className="flex flex-col sm:flex-row justify-between font-medium">
                     <Link to="/search">
                         <FaArrowLeftLong size={30} />
                     </Link>
-
-                    <div className="flex flex-row justify-center items-center">
-                        <MdOutlineIosShare />
-                        <p>Share</p>
-                    </div>
 
                 </div>
                 <div className="flex flex-row justify-between gap-10 md:gap-5 sm:gap-2 items-center">
