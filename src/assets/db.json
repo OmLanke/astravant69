@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "name": "Mount Merry Heights",
         "bhk": "1.5 BHK",
         "area": "900 SqFt",
@@ -18,6 +19,7 @@
         "furnishing": "Furnished"
     },
     {
+        "id": 1,
         "name": "Carter Road Residency",
         "bhk": "1 BHK",
         "area": "750 SqFt",
@@ -36,6 +38,7 @@
         "furnishing": "Furnished"
     },
     {
+        "id": 2,
         "name": "Juhu Luxuria",
         "bhk": "2 BHK",
         "area": "1200 SqFt",
@@ -54,6 +57,7 @@
         "furnishing": "Furnished"
     },
     {
+        "id": 3,
         "name": "Kalpak Hormus Apartments",
         "bhk": "2 BHK",
         "area": "1300 SqFt",
@@ -72,6 +76,7 @@
         "furnishing": "Semi-Furnished"
     },
     {
+        "id": 4,
         "name": "Juhu Residency",
         "bhk": "2 BHK",
         "area": "1150 SqFt",
@@ -90,6 +95,7 @@
         "furnishing": "Furnished"
     },
     {
+        "id": 5,
         "name": "Nivaan Apartments",
         "bhk": "2 BHK",
         "area": "1250 SqFt",
@@ -108,6 +114,7 @@
         "furnishing": "Semi-Furnished"
     },
     {
+        "id": 6,
         "name": "Madhu Park Residency",
         "bhk": "3 BHK",
         "area": "1400 SqFt",
@@ -126,6 +133,7 @@
         "furnishing": "Furnished"
     },
     {
+        "id": 7,
         "name": "Waterfield Heights",
         "bhk": "4 BHK",
         "area": "2000 SqFt",
@@ -144,6 +152,7 @@
         "furnishing": "Semi-Furnished"
     },
     {
+        "id": 8,
         "name": "Madhu Park Residency",
         "bhk": "3 BHK",
         "area": "1400 SqFt",

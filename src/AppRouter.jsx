@@ -27,7 +27,6 @@ const AppRouter = () => {
                 <Route path="/rentalprop" element={<RentalProp />} />
                 <Route path="/propertylisting" element={<PropertyListing />} />
                 <Route path="/services" element={<OurService />} />
-
             </Routes>
             <Nsl />
             <Footer />

@@ -21,7 +21,7 @@ const SearchByAddress = () => {
 
   return (
     <div>
-      <div className="mx-auto max-w-2xl sm:px-6 lg:px-8 h-20 ">
+      <div className="mx-auto max-w-2xl sm:px-6 lg:px-8 h-20">
         <div className="flex items-center">
           <input
             type="text"
@@ -69,8 +69,8 @@ const SearchByAddress = () => {
       </div>
       {/* Display search results */}
       <div className="mx-auto max-w-2xl sm:px-6 lg:px-8">
-        {searchResults.map((item) => (
-          <Link to={`/propertypage/`} key={item.id || item.name}>
+        {searchResults.map((item, index) => (
+          <Link to={`/propertypage/${item.id}`} key={item.id}>
             <div className="border-b py-4 flex">
               <div className="flex-shrink-0 mr-4">
                 <img
