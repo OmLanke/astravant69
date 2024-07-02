@@ -11,7 +11,7 @@ const ConBanOne = () => {
                     </div>
                     <div className="mx-auto">
                         <p>Phone No. 897567546</p>
-                        <p>Email- infor@astravant.com</p>
+                        <p>Email- info@astravantrealty.com</p>
                     </div>
                     <div className="p-2 pl-4 pr-4 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border border-[2px] mb-20 border-white mx-auto">
                         <Link to="/contactus">

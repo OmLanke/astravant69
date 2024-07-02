@@ -77,7 +77,7 @@ const Contact = () => {
                 <p>Connect with us</p>
                 <div className="py-2">
                   <p className="text-white pb-4">
-                    <a href="mailto:info@astravant.com">info@astravant.com</a>
+                    <a href="mailto:info@astravantrealty.com">info@astravantrealty.com</a>
                   </p>
                   <p className="text-white">+91 8329 109 390</p>
                 </div>
