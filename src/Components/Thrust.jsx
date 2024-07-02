@@ -2,34 +2,34 @@ import React, { useState, useEffect } from "react";
 
 const reviewsData = [
   {
-    name: "Astra Vant",
+    name: " Raeesa Merchant - Client Relations with Sodexo  ",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem libero id exercitationem officia, maxime a laboriosam labore est ullam? Beatae aliquid odit necessitatibus, quasi quisquam quam, enim animi dolorem aperiam excepturi porro facilis.",
-    date: "18th October",
+      "Company executive name who assisted you out - Daanish Aly  Overall experience while dealing - matured and well experienced  knowledgeable helpful and always very polite and well mannered",
+    date: "Executive- Daanish Aly  ",
     stars: 4,
   },
   {
-    name: "John Doe",
-    review: "Great service and support!",
-    date: "12th November",
+    name: "Shahbaz Karim -owner @ Icarus entertainment ",
+    review: "Overall experience while dealing - Daanish knows his work very well , Highly recommend !",
+    date: "Executive- Daanish Aly  ",
     stars: 5,
   },
   {
-    name: "Jane Smith",
-    review: "Very satisfied with the real estate projects.",
-    date: "5th December",
+    name: "Sujay Mirchandani -Production house",
+    review: "Overall experience while dealing - Amazing experience dealing with Astravant Realty , super professional & helpful as always Their after sales service is also very strong",
+    date: "Executive- Daanish Aly",
     stars: 3,
   },
   {
-    name: "Bob Brown",
-    review: "Professional and reliable.",
-    date: "25th January",
+    name: "Hasan Rezza- Investor at global capital",
+    review: "Overall experience while dealing - Professional team ! Had a great experience would surely recommend to all looking out for real estate services",
+    date: "Executive- Daanish Aly",
     stars: 4,
   },
   {
-    name: "Alice Green",
-    review: "Highly recommended!",
-    date: "3rd February",
+    name: " Somya Jain  - Brand Marketing Manager",
+    review: "Overall experience while dealing - He was about to help find a place that complimented my exact expectations. Highly recommend.",
+    date: "Executive- Daanish Aly",
     stars: 5,
   },
   // More reviews can be added here
