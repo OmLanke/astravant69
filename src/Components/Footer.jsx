@@ -27,9 +27,9 @@ const Footer = () => {
                                     </a>
                                 </p>
                                 <p className='text-white flex gap-2 text-3xl'>
-                                    <FaInstagram />
-                                    <FaFacebookSquare />
-                                    <FaLinkedin />
+                                    <a href="https://www.instagram.com/astravant_realty?igsh=MTRlOHhlN2pzYXdyeg=="><FaInstagram /></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61561193497934&mibextid=LQQJ4d"><FaFacebookSquare /></a>
+                                    <a href = "https://www.linkedin.com/company/espire-realtors/" ><FaLinkedin /></a>
                                 </p>
                             </div>
                         </div>
