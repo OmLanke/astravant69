@@ -1,10 +1,10 @@
 import React from 'react'
-import PP_one from '../Components/PP_one'
+import PP_two from '../Components/PP_two.jsx'
 import Footer from '../Components/Footer.jsx'
 const PropertyPage = () => {
     return (
         <>
-            <PP_one />
+            <PP_two />
             {/* <Footer /> */}
         </>
     )

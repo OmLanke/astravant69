@@ -2,7 +2,7 @@ import React from 'react'
 import SearchByAddress from '../Components/SearchByAddress.jsx'
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import "../Pages/Search.css"
-import db from '../assets/db.json'
+import db2 from '../assets/db2.json'
 import { Link } from 'react-router-dom'
 
 const Contact = () => {
@@ -24,12 +24,12 @@ const Contact = () => {
           role="list"
           className="grid grid-cols-1 gap-x-6 gap-y-8 lg:grid-cols-3 xl:gap-x-8"
         >
-          {db.map((prop, index) => (
+          {db2.map((prop, index) => (
             <li
               key={index}
               className="overflow-hidden rounded-xl border border-gray-200"
             >
-              <Link to={`/propertypage/${index}`}>
+              <Link to={`/propertypage2/${index}`}>
                 <div className="flex flex-col gap-4">
                   <div
                     className="flex items-center justify-center h-64 bg-cover bg-center"

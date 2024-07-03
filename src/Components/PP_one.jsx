@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { MdOutlineIosShare } from "react-icons/md";
-import db from '../assets/db.json'
+import db from '../assets/db2.json'
 
 const PP_one = () => {
     const params = useParams();
