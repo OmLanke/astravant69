@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './stylecon.css'; // Ensure the path is correct based on your project structure
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn} from 'react-icons/fa';
 
 const ConUsBanTwo = () => {
     const [show, setShow] = useState(true);
@@ -72,9 +72,6 @@ const ConUsBanTwo = () => {
                         </a>
                         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" >
                             <FaLinkedinIn className="text-white h-6 w-6" />
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" >
-                            <FaTwitter className="text-white h-6 w-6" />
                         </a>
                     </div>
                 </div>

@@ -1,8 +1,7 @@
 import React from 'react'
-import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
+import { FaFacebookSquare, } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaSquareTwitter } from "react-icons/fa6";
 
 
 
@@ -31,7 +30,6 @@ const Footer = () => {
                                     <FaInstagram />
                                     <FaFacebookSquare />
                                     <FaLinkedin />
-                                    <FaTwitter />
                                 </p>
                             </div>
                         </div>
