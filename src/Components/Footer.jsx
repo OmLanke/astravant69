@@ -16,13 +16,13 @@ const Footer = () => {
                 <div className='flex flex-col md:flex-row'>
                     <div className='text-[white] text-md'>
                         <p className='w-[70%]  pt-6 tracking-widest font-medium'>
-                            <a href="info@astravant.com" className='pl-8'>info@astravant.com</a>
+                            <a href="info@astravantrealty.com" className='pl-8'>info@astravantrealty.com</a>
                             <p className='pt-4'>E - Wing - 309, Crystal Plaza, Opposite Infiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
                         </p>
                         <div className='pt-6 font-bold'>
                             <div className='py-2'>
                                 <p className='text-white pb-4'>
-                                    <a href="info@astravant.com">
+                                    <a href="info@astravantrealty.com">
                                         Our Socials
                                     </a>
                                 </p>
