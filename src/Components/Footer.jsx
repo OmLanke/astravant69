@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className='text-[white] text-md'>
                         <p className='w-[70%]  pt-6 tracking-widest font-medium'>
                             <a href="info@astravant.com" className='pl-8'>info@astravant.com</a>
-                            <p className='pt-4'>Chicago, Hinsdale, Lake Forest Western Springs & Winnetka, IL, Lake Geneva, WI, New Buffalo, MI, Naples, FL & Park City, UT</p>
+                            <p className='pt-4'>E - Wing - 309, Crystal Plaza, Opposite Infiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
                         </p>
                         <div className='pt-6 font-bold'>
                             <div className='py-2'>
