@@ -18,7 +18,7 @@ const HomeBannerOne = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-end gap-3 md:ml-56">
             <h2 className="font-medio" >
-              Meet
+              Find
             </h2>
             <h2 className="font-medio" >
               Realty
