@@ -40,7 +40,7 @@ const Card = ({ stars, name, review, date  }) => {
     <div className="bg-white shadow-lg p-4 pl-8 pr-8 rounded-3xl gap-4 flex flex-col hover:shadow-xl">
       <div className="flex flex-row justify-between items-center">
         <div className="flex flex-row gap-3 items-center">
-          <img src="charman.png" className="rounded-full w-9 h-9" alt="" />
+          
           <p>{name}</p>
         </div>
       </div>
