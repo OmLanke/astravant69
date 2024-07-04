@@ -60,7 +60,7 @@ const ConUsBanTwo = () => {
                     <button className='flex flex-row border-2 items-center justify-center border-[#E79700] p-2 w-full sm:w-1/2 md:w-1/3 mx-auto' type='submit'>Submit</button>
                 </div>
                 <div className="flex flex-col gap-4 text-xl sm:text-2xl md:text-3xl mt-8 lg:mt-0">
-                    <p>info@astravant.com</p>
+                    <p>info@astravantrealty.com</p>
                     <p>+91 9136114755</p>
                     <p>E - Wing - 309, Crystal Plaza, Opposite Infiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
                     <div className="flex flex-row gap-4 justify-center lg:justify-start">
