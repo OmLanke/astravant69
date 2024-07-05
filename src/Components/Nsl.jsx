@@ -9,14 +9,17 @@ const Nsl = () => {
                     <div className="flex flex-col md:flex-row justify-between items-center mx-auto">
                         <div className="relative bg-[rgba(29,89,227,0.51)] max-w-md leading-tight gap-4 mx-auto text-white p-4 py-16 flex flex-col justify-center items-center text-center">
                             <p className='w-4/5 text-3xl font-medio'>Bringing your dream home near to you</p>
-                            <p className='w-4/5'>We offer the highest level of integrity,
-                                expertise, and service. The Dawn McKenna
-                                Group is the #1 leading real estate team in
-                                the Midwest, Southwest Florida and Park City
-                                for Coldwell Banker. Whether buying, selling
-                                or renting, you can counton our Local
-                                Expertise and Global Reach.
+                            <p>
+                                <meta name="description" content="Astravant Realty: Leading real estate team in Mumbai offering expert buying, selling, and renting services with local expertise and global reach." />
+                                We offer the <strong>highest level of integrity, expertise, and service</strong>&nbsp;
+                                in <em>Mumbai real estate</em>. <strong>Astravant Realty</strong> is the <em>leading real estate team</em>&nbsp;
+                                in <em>Mumbai, Juhu, Bandra, and South Bombay</em>.&nbsp;
+                                Whether <em>buying, selling or renting</em>, you can count on our <strong>Local Expertise and Global Reach</strong>.
                             </p>
+                            <p>
+                                <meta name="keywords" content="Mumbai real estate, Astravant Realty, dream home Mumbai, buying property Mumbai, selling property Mumbai, renting property Mumbai, local expertise, global reach"/>
+                            </p>
+
 
                             <Link to="/contactus">
                                 <button className='border-[2px] p-2 hover:bg-white transition duration-500 hover:text-[#001F66] border-white'>Contact us</button>
