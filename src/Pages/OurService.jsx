@@ -28,7 +28,8 @@ const OurService = () => {
                     'Offer insights on Mumbai real estate trends',
                     'Manage negotiations and transactions'
                 ]}
-                buttonText='connect with our experts'
+                buttonText='Connect with our experts'
+                buttonLink='/contactus' // add link to button
                 imageUrl='sofa.png'
                 imageAlt='Luxury Property Consultation'
             />
@@ -51,7 +52,8 @@ const OurService = () => {
                     'Tailored approach for each client',
                     'Streamlined buying and selling process'
                 ]}
-                buttonText='find your dream property'
+                buttonText='Find your dream property'
+                buttonLink='/search' // add link to button
                 imageUrl='grsofa.png'
                 imageAlt='Property Buying and Selling'
             />
@@ -75,7 +77,8 @@ const OurService = () => {
                     'Customized reports for your property goals',
                     'Expert interpretation of market data'
                 ]}
-                buttonText='connect with our experts'
+                buttonText='Connect with our experts'
+                buttonLink='/contactus' // add link to button
                 imageUrl='grw.png'
                 imageAlt='Market Analysis Services'
             />
