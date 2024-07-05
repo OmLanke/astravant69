@@ -12,27 +12,9 @@ const ConBanTwo = () => {
                                 <p>agency.</p>
                             </div>
                             <div className="w-3/5 mt-10 ">
-                                <p>There is nothing like it ~ anywhere. This is a once-in-a-
-                                    lifetime opportunity to possess a natural oasis located in
-                                    the exclusive neighborhood of Port Royal, the ultimate
-                                    setting for creating a lifestyle of custom luxury. By any
-                                    measure, Dawn Mckenna is one of America’s most
-                                    successful, creative, and sought-after luxury real estate
-                                    agents. Not only is she the No. 1 agent in Hinsdale, Illinois,
-                                    but she also leads the No. 1 ranked team in lllinois and the
-                                    Midwest, and No. 4 in the nation among all brokerages, as
-                                    ranked by the Wall Street Journal Real Trends. Since
-                                    expanding seven years ago, the Dawn McKenna Group
-                                    (DMG) holds the number one position in Southwest Florida,
-                                    Park City, Utah, and Inman named DMG the number one
-                                    luxury team in the United States in 2023.
+                                <p><meta name="description" content="Astravant Realty Group: Mumbai's leading luxury real estate agency. Offering exclusive properties in Juhu, Bandra, and South Bombay with unparalleled expertise and service."> There is nothing like it ~ anywhere. This is a once-in-a-lifetime opportunity to possess a natural oasis located in the exclusive neighborhoods of <strong>Mumbai</strong>, the ultimate setting for creating a lifestyle of custom luxury. By any measure, <strong>Astravant Realty Group</strong> is one of <em>Mumbai's</em> most successful, creative, and sought-after luxury real estate agencies.</p> <p>Not only are we the No. 1 agency in <em>South Bombay</em>, but we also lead the top-ranked team across <em>Mumbai</em>. Since our expansion, Astravant Realty Group holds the number one position in <em>Juhu, Bandra, and South Bombay</em>. Our success has led to us being recognized as the number one luxury team in <em>Mumbai</em> for 2023.</p> <p>Astravant's success has resulted in invitations to exclusive, invite-only agent networks, connecting us with international luxury real estate markets and enhancing our <strong>global reach</strong> while maintaining our deep roots in Mumbai.</p> <p><meta name="keywords" content="Astravant Realty Group, Mumbai luxury real estate, South Bombay properties, Juhu real estate, Bandra luxury homes, Mumbai's top real estate agency, exclusive properties Mumbai"> </p>
 
-                                    Dawn's success led to her being invited to be a founding
-                                    member of two exclusive, invite-only agent networks: the
-                                    International Luxury Alliance, which connects Coldwell
-                                    Banker,
 
-                                </p>
                             </div>
                         </div>
                         <img src="bui.png" className='h-full' alt="" />
