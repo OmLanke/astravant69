@@ -1,11 +1,51 @@
-import React from 'react'
-import SearchByAddress from '../Components/SearchByAddress.jsx'
+import React, { useState } from 'react';
+import SearchByAddress from '../Components/SearchByAddress.jsx';
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import "../Pages/Search.css"
 import db2 from '../assets/db2.json'
 import { Link } from 'react-router-dom'
 
 const Contact = () => {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [propertyRequirements, setPropertyRequirements] = useState('');
+  const [budgetRange, setBudgetRange] = useState('');
+  const [submitted, setSubmitted] = useState(false);  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = {
+      firstName,
+      lastName,
+      phoneNumber,
+      propertyRequirements,
+      budgetRange,
+    };
+
+    try {
+      const response = await fetch('https://nodemail-4m16.onrender.com/property-inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+        setFirstName('');
+        setLastName('');
+        setPhoneNumber('');
+        setPropertyRequirements('');
+        setBudgetRange('');
+        setSubmitted(true);
+      } else {
+        alert('Error sending message. Please try again.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Error sending message. Please try again.');
+    }
+  };
+
   return (
     <div>
       <div
@@ -84,36 +124,48 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 w-full lg:w-1/2">
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
+              <form onSubmit={handleSubmit}>
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    value={firstName}
+                    onChange={(event) => setFirstName(event.target.value)}
+                    className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    value={lastName}
+                    onChange={(event) => setLastName(event.target.value)}
+                    className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  />
+                </div>
                 <input
                   type="text"
-                  placeholder="First Name"
-                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  placeholder="Phone Number"
+                  value={phoneNumber}
+                  onChange={(event) => setPhoneNumber(event.target.value)}
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
                 <input
                   type="text"
-                  placeholder="Last Name"
-                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  placeholder="Property Requirements"
+                  value={propertyRequirements}
+                  onChange={(event) => setPropertyRequirements(event.target.value)}
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
                 />
-              </div>
-              <input
-                type="text"
-                placeholder="Phone Number"
-                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-              />
-              <input
-                type="text"
-                placeholder="Property Requirements"
-                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-              />
-              <input
-                type="text"
-                placeholder="Your Budget Range"
-                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-              />
-              <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
-                Submit
-              </button>
+                <input
+                  type="text"
+                  placeholder="Your Budget Range"
+                  value={budgetRange}
+                  onChange={(event) => setBudgetRange(event.target.value)}
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                />
+                <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
+                 {submitted ? 'Submitted' : 'Submit'}
+                </button>
+              </form>
             </div>
           </div>
         </div>
