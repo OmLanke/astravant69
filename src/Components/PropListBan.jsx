@@ -8,7 +8,12 @@ import {
 
 const PropListBan = () => {
   const [show, setShow] = useState(true);
-
+  const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [query, setQuery] = useState('');
+    const [description, setDescription] = useState('');
+    const [submitted, setSubmitted] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -21,7 +26,39 @@ const PropListBan = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = {
+        firstName,
+        lastName,
+        email,
+        query,
+        description,
+    };
 
+    try {
+        const response = await fetch('https://nodemail-4m16.onrender.com/query', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+            alert('Message sent successfully!');
+            setFirstName('');
+            setLastName('');
+            setEmail('');
+            setQuery('');
+            setDescription('');
+            setSubmitted(true);
+        } else {
+            alert('Error sending message. Please try again.');
+        }
+    } catch (error) {
+        console.error(error);
+        alert('Error sending message. Please try again.');
+    }
+};
   return (
     <div className="relative bg-[#000000] text-white p-4 sm:p-8 mt-1 mx-auto flex flex-col w-full min-h-screen">
       <div
@@ -43,27 +80,37 @@ const PropListBan = () => {
           <div className="flex flex-col gap-6">
             <div className="flex flex-col sm:flex-row gap-6">
               <input
-                type="text"
+                 type="text"
+                 value={firstName}
+                 onChange={(event) => setFirstName(event.target.value)}
                 className="w-full p-3 outline-none border-2 border-white bg-transparent placeholder-white"
                 placeholder="First Name"
               />
               <input
                 type="text"
+                value={lastName}
+                onChange={(event) => setLastName(event.target.value)}
                 className="w-full p-3 outline-none border-2 border-white bg-transparent placeholder-white"
                 placeholder="Last Name"
               />
             </div>
             <input
               type="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
               className="p-3 outline-none border-2 border-white bg-transparent placeholder-white"
               placeholder="Email Address"
             />
             <input
               type="text"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
               className="p-3 outline-none border-2 border-white bg-transparent placeholder-white"
               placeholder="Your Query is regarding?"
             />
             <textarea
+              value={description}
+              onChange={(event) => setDescription(event.target.value)}
               name=""
               id=""
               rows="8"
@@ -71,10 +118,10 @@ const PropListBan = () => {
               className="p-3 outline-none border-2 text-white border-white bg-transparent resize-none placeholder-white"
             ></textarea>
             <button
-              className="border-2 border-[#E79700] p-3 w-full sm:w-32 font-semibold self-center lg:self-start"
-              type="submit"
+              className={`border-2 border-[#E79700] p-3 w-full sm:w-32 font-semibold self-center lg:self-start"
+              ${submitted? 'opacity-50 cursor-not-allowed' : ''}`} type='submit' onClick={handleSubmit}
             >
-              Submit
+              {submitted ? "Submitted" : "Submit"}
             </button>
           </div>
         </div>
