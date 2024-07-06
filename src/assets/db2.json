@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Godrej Avenue eleven, MAHALAXMI- PRESIDENTAL ENCLAVE",
+        "bhk": "4 BHK",
+        "area": "1.55 HECTARES (3.85 ACRES )",
+        "price": "",
+        "ready": "",
+        "verified": "",
+        "bedrooms": "4 BED RESIDENCE TOWER",
+        "address": "Mahalaxmi",
+        "parking": "",
+        "description": "Presenting Godrej Avenue Eleven, Mahalaxmi. A fusion of modern aesthetics and timeless allure, your home echoes dreams and aspirations, a place where every moment is extraordinary.",
+        "amenities": "MULTIPLE PLAYCOURTS, INFINITY-EDGE POOL, OBSERVATORY & LOUNGE",
+        "other": "",
+        "imgurl": "/p1.jpg",
+        "location": "Mahalaxmi",
+        "facing": "",
+        "furnishing": "",
+        "imgurls": [
+            "/p1.jpg",
+            "/p2.jpg",
+            "/p3.jpg",
+            "/p4.jpg"
+        ]
+    },
+    {
+        "name": "LODHA, ALTAMOUNT",
+        "bhk": "",
+        "area": "",
+        "price": "",
+        "ready": "",
+        "verified": "",
+        "bedrooms": "",
+        "address": "Altamount Road",
+        "parking": "",
+        "description": "Imagine a quiet 2 km-stretch on a hill in Mumbai’s most elite precinct, dotted with charming colonial-style bungalows and shaded avenues of green.",
+        "amenities": "25m outdoor swimming pool, private cinema, massage room, fitness training, rooftop pool & observatory",
+        "other": "",
+        "imgurl": "/p5.jpg",
+        "location": "Altamount Road",
+        "facing": "",
+        "furnishing": "",
+        "imgurls": [
+            "/p5.jpg",
+            "/p6.jpg",
+            "/p7.jpg",
+            "/p8.jpg"
+        ]
+    },
+    {
+        "name": "OBEROI, ENIGMA,MULUND WEST",
+        "bhk": "3 & 4 BHK",
+        "area": "",
+        "price": "",
+        "ready": "Ready To Move In",
+        "verified": "",
+        "bedrooms": "",
+        "address": "Mulund West",
+        "parking": "",
+        "description": "In a city where space is at a premium, Enigma radiates elevated living.",
+        "amenities": "Golf Simulator, Skating Rink, Open Air Amphitheatre, Café, Jacuzzi, Gymnasium, Cricket Pitch, Futsal Court, Landscaped Garden, Party Lawn",
+        "other": "",
+        "imgurl": "/p9.jpg",
+        "location": "Mulund West",
+        "facing": "",
+        "furnishing": "",
+        "imgurls": [
+            "/p9.jpg",
+            "/p10.jpg",
+            "/p11.jpg",
+            "/p12.jpg"
+        ]
+    },
+    {
+        "name": "RUSTOMJEE PARISHRAM",
+        "bhk": "3, 4 & 5 BHK",
+        "area": "",
+        "price": "",
+        "ready": "",
+        "verified": "",
+        "bedrooms": "",
+        "address": "Pali Hill, Bandra (W), Mumbai",
+        "parking": "",
+        "description": "",
+        "amenities": "MINI THEATHRE, Swimming pool, Gym, Forest walk",
+        "other": "",
+        "imgurl": "/p13.jpg",
+        "location": "Pali Hill, Bandra (W), Mumbai",
+        "facing": "",
+        "furnishing": "",
+        "imgurls": [
+            "/p13.jpg",
+            "/p14.jpg",
+            "/p15.jpg",
+            "/p16.jpg"
+        ]
+    },
+    {
+        "name": "RUSTOMJEE",
+        "bhk": "1-5 BHK",
+        "area": "",
+        "price": "",
+        "ready": "",
+        "verified": "",
+        "bedrooms": "",
+        "address": "",
+        "parking": "",
+        "description": "",
+        "amenities": "",
+        "other": "",
+        "imgurl": "/p17.jpg",
+        "location": "",
+        "facing": "",
+        "furnishing": "",
+        "imgurls": [
+            "/p17.jpg",
+            "/p18.jpg",
+            "/p19.jpg",
+            "/p20.jpg"
+        ]
+    }
+]

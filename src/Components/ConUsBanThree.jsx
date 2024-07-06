@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const ConUsBanThree = () => {
     return (
         <>
@@ -10,17 +10,17 @@ const ConUsBanThree = () => {
                 <div className="flex flex-row p-2 gap-2 mb-10">
                     <div className="flex items-center lg:p-[155px]" style={{ backgroundImage: "url('/ast8.png')" }}>
                         <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
+                        <Link to="/search"><p className='pl-9 pr-9'>2 BHK</p></Link>
                         </div>
                     </div>
                     <div className="flex items-center lg:p-[155px]" style={{ backgroundImage: "url('/ast9.png')" }}>
                         <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
+                            <Link to="/search"><p className='pl-9 pr-9'>2 BHK</p></Link>
                         </div>
                     </div>
                     <div className="flex items-center lg:p-[155px]" style={{ backgroundImage: "url('/ast10.png')" }}>
                         <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
+                        <Link to="/search"><p className='pl-9 pr-9'>2 BHK</p></Link>
                         </div>
                     </div>
                 </div>

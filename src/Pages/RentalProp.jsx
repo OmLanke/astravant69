@@ -1,10 +1,9 @@
-import React from "react";
-import SearchByAddress from "../Components/SearchByAddress.jsx";
-import { FaStar } from "react-icons/fa";
-import { FaStarHalf } from "react-icons/fa";
-import "../Pages/Search.css";
-import db from "../assets/db.json";
-import { Link } from "react-router-dom";
+import React from 'react'
+import SearchByAddress from '../Components/SearchByAddress.jsx'
+import { FaStar, FaStarHalf } from "react-icons/fa";
+import "../Pages/Search.css"
+import db from '../assets/db.json'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
@@ -13,14 +12,10 @@ const Contact = () => {
         className="relative text-white bg-cover flex flex-col bg-center w-full h-screen mb-44"
         style={{ backgroundImage: "url('/rentalproppic.png')" }}
       >
-        <div className="mx-auto my-auto ">
-          <div className="text-7xl flex justify-center text-center">
+        <div className="mx-auto my-auto">
+          <div className="text-7xl flex justify-center items-center text-center">
             <p className="font-medio">Rental Properties</p>
           </div>
-
-          {/* <div className="p-2 pl-4 pr-4 hover:bg-white transition duration-500 hover:text-black hover:cursor-pointer font-medium flex flex-col items-center justify-center text-white border border-[2px] mb-20 border-white mx-auto">
-                        <p>Contact Us</p>
-                    </div> */}
         </div>
       </div>
       <SearchByAddress />
@@ -37,13 +32,9 @@ const Contact = () => {
               <Link to={`/propertypage/${index}`}>
                 <div className="flex flex-col gap-4">
                   <div
-                    className="flex items-center lg:p-[200px]"
+                    className="flex items-center justify-center h-64 bg-cover bg-center"
                     style={{ backgroundImage: `url(${prop.imgurl})` }}
-                  >
-                    {/* <div className="p-2 border border-2 hover:bg-white hover:text-black transition duration-500 hover:font-medium hover:cursor-pointer border-white text-white bg-transparent">
-                            <p className='pl-9 pr-9'>2 BHK</p>
-                        </div> */}
-                  </div>
+                  ></div>
 
                   <div>
                     <div className="flex justify-between p-4">
@@ -56,7 +47,7 @@ const Contact = () => {
                       <p>Address :-</p>
                       <br></br>
                       <p>{prop.address}</p>
-                      <p className="flex ">
+                      <p className="flex">
                         <FaStarHalf />
                         <FaStar />
                         <FaStar />
@@ -70,8 +61,6 @@ const Contact = () => {
           ))}
         </ul>
       </div>
-
-      {/* ---------------------------------------- */}
 
       <div className="pb-8">
         <div className="flex flex-col justify-between bg-[#E79700] w-full p-4 sm:p-6 md:p-10 lg:p-20">
@@ -88,9 +77,9 @@ const Contact = () => {
                 <p>Connect with us</p>
                 <div className="py-2">
                   <p className="text-white pb-4">
-                    <a href="mailto:info@astravant.com">info@astravant.com</a>
+                    <a href="mailto:info@astravantrealty.com">info@astravantrealty.com</a>
                   </p>
-                  <p className="text-white">+91 8329 109 390</p>
+                  <p className="text-white">+91 9136114755</p>
                 </div>
               </div>
             </div>
@@ -131,6 +120,6 @@ const Contact = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Contact;

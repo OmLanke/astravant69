@@ -9,7 +9,7 @@ import PropertyPage from './Pages/PropertyPage';
 import RentalProp from './Pages/RentalProp';
 import PropertyListing from './Pages/PropertyListing.jsx'
 import OurService from './Pages/OurService.jsx'
-
+import RentalPropInfo from './Pages/PropertyPage2.jsx'
 import Navbar from './Components/Navbar.jsx';
 import Nsl from './Components/Nsl.jsx';
 import Footer from './Components/Footer.jsx';
@@ -26,6 +26,7 @@ const AppRouter = () => {
                 <Route path="/propertypage/:id" element={<PropertyPage />} />
                 <Route path="/rentalprop" element={<RentalProp />} />
                 <Route path="/propertylisting" element={<PropertyListing />} />
+                <Route path="/propertypage2/:id" element={<RentalPropInfo />} />
                 <Route path="/services" element={<OurService />} />
             </Routes>
             <Nsl />

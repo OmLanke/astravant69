@@ -25,7 +25,7 @@ const Mobile = () => {
           </p>
         </div>
         <button className="border-[2px] p-2 hover:bg-white transition duration-500 hover:text-[#001F66] border-white w-1/4 mx-auto">
-          <a href="/contact">Learn More</a>
+          <a href="/aboutus">Learn More</a>
         </button>
       </div>
     </div>
@@ -57,7 +57,7 @@ const Computer = () => {
             </p>
           </div>
           <button className="border-[2px] p-2 hover:bg-white transition duration-500 hover:text-[#001F66] border-white w-1/4">
-            <a href="/contact">Learn More</a>
+            <a href="/aboutus">Learn More</a>
           </button>
         </div>
         <img src="charman.png" className="h-full" alt="" />
