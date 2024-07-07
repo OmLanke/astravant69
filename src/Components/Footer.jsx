@@ -46,7 +46,7 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row'>
           <div className='text-[white] text-md'>
             <p className='w-[70%]  pt-6 tracking-widest font-medium'>
-              <a href="info@astravantrealty.com" className='pl-2'>info@astravantrealty.com</a>
+              <a href="mailto: info@astravantrealty.com" className='pl-2'>info@astravantrealty.com</a>
               <p className='pt-4'>E - Wing - 309, Crystal Plaza, Opposite Infiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
             </p>
             <div className='pt-6 font-bold'>

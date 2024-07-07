@@ -113,8 +113,8 @@ const ConUsBanTwo = () => {
                         </button>
                     </div>
                     <div className="flex flex-col gap-4 text-xl sm:text-2xl md:text-3xl mt-8 lg:mt-0">
-                        <p>info@astravantrealty.com</p>
-                        <p>+91 9136114754</p>
+                        <p><a href="mailto: info@astravantrealty.com">info@astravantrealty.com</a></p>
+                        <p><a href="tel:+919136114754">+91 9136114754</a></p>
                         <p>E - Wing - 309, Crystal Plaza, OppositeInfiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
                         <div className="flex flex-row gap-4 justify-center lg:justify-start">
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" >
