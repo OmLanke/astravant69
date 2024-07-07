@@ -22,7 +22,7 @@ const OsMain = ({ backgroundColor, title, description, expertiseTitle, expertise
                         ))}
                     </ol>
                 </div>
-                <Link to={buttonLink}className='bg-transparent border-2 border-white w-full sm:w-2/3 md:w-1/2 lg:w-1/4 p-2 mt-3 mx-auto hover:bg-white hover:text-[#72383D] transition duration-500 outline-none'>
+                <Link to={buttonLink}className='bg-transparent text-center border-2 border-white w-full sm:w-2/3 md:w-1/2 lg:w-1/4 p-2 mt-3 mx-auto hover:bg-white hover:text-[#72383D] transition duration-500 outline-none'>
                     {buttonText}
                 </Link>
             </div>
