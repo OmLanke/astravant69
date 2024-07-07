@@ -51,7 +51,7 @@ const Nsl = () => {
                         <div className="max-w-sm border-t-0 md:border-t-2 border-r-2 border-b-2 border-l-2 md:border-l-0 p-3 lg:p-6 my-auto mx-4 md:mx-auto sm:gap-2 md:gap-4 mb-10 lg:mb-0  text-white text-center flex flex-col justify-end gap-6 border-white">
                             <p className='text-2xl'>NEWSLETTER</p>
                             <p className='mx-auto leading-tight'>For exclusive news and market updates, sign up for our newsletter.</p>
-                            <input type="email" className='border-2 mx-auto outline-none border-r-white p-3 bg-[rgba(29,89,227,0.31)]' placeholder='Your Email' value={email} onChange={(event) => setEmail(event.target.value)} />
+                            <input type="email" className='border-2 mx-auto text-center placeholder:text-center outline-none border-r-white p-3 bg-[rgba(29,89,227,0.31)]' placeholder='Your Email' value={email} onChange={(event) => setEmail(event.target.value)} />
                             <button className='border-[2px] px-6 py-3 hover:bg-white transition duration-500 hover:text-[#001F66] border-white text-center mx-auto  mb-3' onClick={handleSubmit} disabled={submitted}>
                                 {submitted? 'Submitted' : 'Submit'}
                             </button>
