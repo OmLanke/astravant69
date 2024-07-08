@@ -12,17 +12,7 @@ const Mobile = () => {
         <img src="charman.png" className="mx-auto h-[70vh]" alt="" />
         <div className="md:px-28">
           <p>
-            Welcome to the epitome of luxury living In India- our No.1 real
-            estate destination. Here, we redefine. opulence with our exclusive
-            collection of properties, each crafted to perfoction with meticulous
-            attention to detail. From breathtaking skyline views to lush green
-            landscapes, our portfolio boasts tho pinnacle of architectural
-            marvels. But ts not ust about the properties; is about the
-            experience. our esteemed cliente racoivos nothing short of premior
-            and sophisticated service, tailored to thelr every ned: Step into a
-            realm where luxury knows no bounds, and indulge in a lifestyle
-            beyond comparo with us
-          </p>
+          Welcome to the epitome of luxury living in Mumbai - our No.1 real estate destination. Here, we redefine opulence with our exclusive collection of properties, each crafted to perfection with meticulous attention to detail. From breathtaking skyline views to lush green landscapes, our portfolio boasts the pinnacle of architectural marvels. But it's not just about the properties; it's about the experience. Our esteemed clientele receives nothing short of premier and sophisticated service, tailored to their every need. Step into a realm where luxury knows no bounds, and indulge in a lifestyle beyond compare with us.          </p>
         </div>
         <button className="border-[2px] p-2 hover:bg-white transition duration-500 hover:text-[#001F66] border-white w-1/4 mx-auto">
           <a href="/aboutus">Learn More</a>
@@ -44,17 +34,7 @@ const Computer = () => {
           </div>
           <div className="w-3/5 mt-10 font-medio">
             <p>
-              Welcome to the epitome of luxury living In India- our No.1 real
-              estate destination. Here, we redefine. opulence with our exclusive
-              collection of properties, each crafted to perfoction with
-              meticulous attention to detail. From breathtaking skyline views to
-              lush green landscapes, our portfolio boasts tho pinnacle of
-              architectural marvels. But ts not ust about the properties; is
-              about the experience. our esteemed cliente racoivos nothing short
-              of premior and sophisticated service, tailored to thelr every ned:
-              Step into a realm where luxury knows no bounds, and indulge in a
-              lifestyle beyond comparo with us
-            </p>
+            Welcome to the epitome of luxury living in Mumbai - our No.1 real estate destination. Here, we redefine opulence with our exclusive collection of properties, each crafted to perfection with meticulous attention to detail. From breathtaking skyline views to lush green landscapes, our portfolio boasts the pinnacle of architectural marvels. But it's not just about the properties; it's about the experience. Our esteemed clientele receives nothing short of premier and sophisticated service, tailored to their every need. Step into a realm where luxury knows no bounds, and indulge in a lifestyle beyond compare with us.            </p>
           </div>
           <button className="border-[2px] p-2 hover:bg-white transition duration-500 hover:text-[#001F66] border-white w-1/4">
             <a href="/aboutus">Learn More</a>

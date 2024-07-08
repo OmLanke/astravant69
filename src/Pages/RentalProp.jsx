@@ -79,7 +79,7 @@ const Contact = () => {
                   <p className="text-white pb-4">
                     <a href="mailto:info@astravantrealty.com">info@astravantrealty.com</a>
                   </p>
-                  <p className="text-white">+91 9136114755</p>
+                  <p className="text-white">+91 9136114754</p>
                 </div>
               </div>
             </div>

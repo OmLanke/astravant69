@@ -11,7 +11,7 @@ const OurService = () => {
             <OsMain
                 backgroundColor='bg-[#72383D]'
                 title='Luxury Property Consultation in Mumbai'
-                description="Discover Mumbai's finest real estate with our expert consultation service. At [Your Agency Name], we connect global clients with prestigious properties in India's financial capital."
+                description="Discover Mumbai's finest real estate with our expert consultation service. At Astravant Realty, we connect global clients with prestigious properties in India's financial capital."
                 expertiseTitle='Our Expertise:'
                 expertiseList={[
                     'Ultra-luxury properties in prime Mumbai locations',
@@ -36,7 +36,7 @@ const OurService = () => {
             <OsMain
                 backgroundColor='bg-[#322D29]'
                 title='Property Buying and Selling in Mumbai'
-                description="Simplify your Mumbai real estate journey with [Your Agency Name]. We expertly guide local and global clients through buying and selling properties in India's financial capital."
+                description="Simplify your Mumbai real estate journey with Astravant Realty. We expertly guide local and global clients through buying and selling properties in India's financial capital."
                 expertiseTitle='Our Services:'
                 expertiseList={[
                     'Curated Mumbai property listings',
@@ -60,7 +60,7 @@ const OurService = () => {
             <OsMain
                 backgroundColor='bg-[#72383D]'
                 title='Market Analysis Services for Mumbai Real Estate'
-                description="Make informed decisions in Mumbai's dynamic property market with our expert market analysis services. [Your Agency Name] provides crucial insights to help you navigate Mumbai's real estate landscape."
+                description="Make informed decisions in Mumbai's dynamic property market with our expert market analysis services. Astravant Realty provides crucial insights to help you navigate Mumbai's real estate landscape."
                 expertiseTitle='Our Expertise:'
                 expertiseList={[
                     'Mumbai property price trends',

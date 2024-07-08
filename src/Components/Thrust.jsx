@@ -114,7 +114,7 @@ const Thrust = () => {
     <div>
       <div className="flex flex-col justify-between bg-[#E79700] w-full p-20 mt-1">
         <div className="mx-auto flex flex-col items-center justify-center text-2xl md:text-4xl xl:text-6xl text-[#001F66] font-medio">
-          <p>Holding an taking care of more than</p>
+          <p>Holding and taking care of more than</p>
           <p>10,000+ customers trust</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 py-8 gap-8">
