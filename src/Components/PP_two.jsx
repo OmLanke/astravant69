@@ -8,7 +8,7 @@ import db from '../assets/db.json'
 const PP_one = () => {
     const params = useParams();
     const property = db[params.id]
-    console.log(property);
+    // console.log(property);
     return (
         <div className='flex flex-col items-center justify-center'>
             <div className='h-20 sm:h-32 w-full bg-gray-600'/>
@@ -23,7 +23,7 @@ const PP_one = () => {
                     <p className='lg:text-5xl md:text-4xl sm:text-3xl font-medium w-2/5 leading-tight'>
                         {property.name}
                     </p>
-                    <div className="w-1/2 h-[2px] bg-black"></div>
+                    <div className="w-1/2 h-[2px] bg-black "></div>
                     <p className='w-1/6 lg:text-3xl md:text-2xl sm:text-xl'>{property.price ? property.price + "₹" : "call for price" }</p>
 
                 </div>

@@ -43,17 +43,32 @@ const Contact = () => {
                         {prop.bhk}, {prop.area}
                       </p>
                     </div>
-                    <div className="flex justify-between p-4">
+                    {/* <div className="flex justify-between p-4 sm:flex-col-reverse">
                       <p>Address :-</p>
                       <br></br>
-                      <p>{prop.address}</p>
+                      <p >{prop.address}</p>
                       <p className="flex">
                         <FaStarHalf />
                         <FaStar />
                         <FaStar />
                         <FaStar />
                       </p>
+                    </div> */}
+                    <div className="flex flex-col p-4">
+                      <div className="flex justify-between items-start mb-2">
+                        <div>
+                          <p>Address :-</p>
+                          <p>{prop.address}</p>
+                        </div>
+                        <div className="flex items-center space-x-1 mt-2 md:mt-0">
+                          <FaStarHalf />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </Link>

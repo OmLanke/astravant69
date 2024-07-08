@@ -10,7 +10,12 @@
         "address": "Mahalaxmi",
         "parking": "",
         "description": "Presenting Godrej Avenue Eleven, Mahalaxmi. A fusion of modern aesthetics and timeless allure, your home echoes dreams and aspirations, a place where every moment is extraordinary.",
-        "amenities": "MULTIPLE PLAYCOURTS, INFINITY-EDGE POOL, OBSERVATORY & LOUNGE",
+        "amenities": [
+            "1.55 HECTARES (3.85 ACRES ) OF FREEHOLD LAND PARCEL",
+            "EXCLUSIVE 4 BED RESIDENCE TOWER",
+            "MULTIPLE PLAYCOURTS",
+            "INDULGENCES THAT REACH FOR THE STARS INFINITY-EDGE POOL, OBSERVATORY & LOUNGE"
+        ],
         "other": "",
         "imgurl": "/p1.jpg",
         "location": "Mahalaxmi",
@@ -33,8 +38,16 @@
         "bedrooms": "",
         "address": "Altamount Road",
         "parking": "",
-        "description": "Imagine a quiet 2 km-stretch on a hill in Mumbai’s most elite precinct, dotted with charming colonial-style bungalows and shaded avenues of green.",
-        "amenities": "25m outdoor swimming pool, private cinema, massage room, fitness training, rooftop pool & observatory",
+        "description": "Imagine a quiet 2 km-stretch on a hill in Mumbai’s most elite precinct, dotted with charming colonial-style bungalows and shaded avenues of green. Imagine a community bound together by wealth and power – of royal Indian princes, political leaders and pioneering industrialists. Imagine a neighbourhood that has retained its legendary charm long after the clang of hooves made way for the swish of alloy wheels. Imagine the finest address for the country’s most powerful. At the highest point of Altamount Road, a new landmark rises where once stood Washington House, former residence of the Consul General of the United States. Presiding over South Mumbai from its vantage point, Lodha Altamount is a vision in glass, providing its influential residents absolute privacy from the public gaze, while allowing unrestricted views of the Arabian Sea and the city beneath.",
+        "amenities": [
+            "A masterpiece from the maestro, Pablo Picasso, graces the lobby of Lodha Altamount.",
+            "A 25m outdoor swimming pool with a deck area provides the perfect retreat for the residents to unwind.",
+            "Be it a business dinner or an intimate dinner with friends, a perfect setting for entertaining guests in style.",
+            "A 12-seater cozy private cinema with state of the art technology.",
+            "A dedicated massage room for invigorating the senses.",
+            "Personalised fitness training and nutrition advice.",
+            "Nothing tops the rooftop pool & observatory with an idyllic setting and spectacular vistas for an evening of celebration."
+          ],
         "other": "",
         "imgurl": "/p5.jpg",
         "location": "Altamount Road",
