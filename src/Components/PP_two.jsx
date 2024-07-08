@@ -14,7 +14,7 @@ const PP_one = () => {
             <div className='h-20 sm:h-32 w-full bg-gray-600'/>
             <div className="w-full flex flex-col  gap-10 bg-white p-8 ">
                 <div className="flex flex-col sm:flex-row justify-between font-medium">
-                    <Link to="/search">
+                    <Link to="/RentalProp">
                         <FaArrowLeftLong size={30} />
                     </Link>
 
@@ -24,7 +24,7 @@ const PP_one = () => {
                         {property.name}
                     </p>
                     <div className="w-1/2 h-[2px] bg-black"></div>
-                    <p className='w-1/6 lg:text-3xl md:text-2xl sm:text-xl'>₹{property.price}</p>
+                    <p className='w-1/6 lg:text-3xl md:text-2xl sm:text-xl'>{property.price ? property.price + "₹" : "call for price" }</p>
 
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between lg:text-base text-xs w-full gap-4">
