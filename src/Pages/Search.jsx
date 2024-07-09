@@ -127,22 +127,22 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 w-full lg:w-1/2">
+            <div className="2flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 w-full lg:w-1/2">
               <form onSubmit={handleSubmit}>
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
+                <div className=" flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
                   <input
                     type="text"
                     placeholder="First Name"
                     value={firstName}
                     onChange={(event) => setFirstName(event.target.value)}
-                    className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                    className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
                   />
                   <input
                     type="text"
                     placeholder="Last Name"
                     value={lastName}
                     onChange={(event) => setLastName(event.target.value)}
-                    className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                    className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
                   />
                 </div>
                 <input
@@ -150,21 +150,21 @@ const Contact = () => {
                   placeholder="Phone Number"
                   value={phoneNumber}
                   onChange={(event) => setPhoneNumber(event.target.value)}
-                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
                 />
                 <input
                   type="text"
                   placeholder="Property Requirements"
                   value={propertyRequirements}
                   onChange={(event) => setPropertyRequirements(event.target.value)}
-                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
                 />
                 <input
                   type="text"
                   placeholder="Your Budget Range"
                   value={budgetRange}
                   onChange={(event) => setBudgetRange(event.target.value)}
-                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
                 />
                 <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
                  {submitted ? 'Submitted' : 'Submit'}

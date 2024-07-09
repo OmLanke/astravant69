@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { FaArrowLeftLong } from "react-icons/fa6";
@@ -9,6 +9,13 @@ const PP_one = () => {
     const params = useParams();
     const property = db[params.id]
     console.log(property);
+
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleExpand = () => {
+        setIsExpanded(!isExpanded);
+    };
+
     return (
         <div className='flex flex-col items-center justify-center'>
             <div className='h-20 sm:h-32 w-full bg-gray-600' />
@@ -79,7 +86,7 @@ const PP_one = () => {
                                 <div className="w-3/4 h-1 bg-black"></div>
                             </div>
                         </div>
-                        <div className="w-5/6">
+                        {/* <div className="w-5/6">
                             <p className='text-xl'>
                                 <span className='font-semibold'>Description:</span> {property.description}
                             </p>
@@ -93,7 +100,54 @@ const PP_one = () => {
                                     </ul>
                                 </div>
                             )}
+                        </div> */}
+                        <div className="w-5/6">
+                            <p className='text-xl'>
+                                <span className='font-semibold'>Description:</span>
+                                <span className={`md:line-clamp-none ${isExpanded ? 'line-clamp-none' : 'line-clamp-2'}`}>
+                                    {property.description}
+                                </span>
+                            </p>
+                            {property.amenities && property.amenities.length > 0 && (
+                                <div className={`mt-4 ${isExpanded ? '' : 'hidden md:block'}`}>
+                                    <span className='font-semibold text-xl'>Amenities:</span>
+                                    <ul className='list-disc ml-5 mt-2'>
+                                        {property.amenities.map((amenity, index) => (
+                                            <li className='py-3' key={index}>{amenity}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                            <button
+                                className="mt-4 p-2 pl-8 pr-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] bg-transparent font-bold placeholder-bold lg:hidden"
+                                onClick={toggleExpand}
+                            >
+                                {isExpanded ? 'Read Less' : 'Read More'}
+                            </button>
                         </div>
+                        {/* <div className="w-5/6">
+                            <p className='text-xl'>
+                                <span className='font-semibold'>Description:</span>
+                                <span className={`${isExpanded ? '' : 'line-clamp-2'}`}>{property.description}</span>
+                            </p>
+                            {property.amenities && property.amenities.length > 0 && (
+                                <div className={`mt-4 ${isExpanded ? '' : 'hidden'}`}>
+                                    <span className='font-semibold text-xl'>Amenities:</span>
+                                    <ul className='list-disc ml-5 mt-2'>
+                                        {property.amenities.map((amenity, index) => (
+                                            <li className='py-3' key={index}>{amenity}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                            <button
+                                className="mt-4 text-blue-500 underline md:hidden"
+                                onClick={toggleExpand}
+                            >
+                                {isExpanded ? 'Read Less' : 'Read More'}
+                            </button>
+                        </div> */}
+
                     </div>
                 </div>
                 <ul
