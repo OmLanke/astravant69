@@ -18,7 +18,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <SearchByAddress />
+      <SearchByAddress database={db} />
       <div className="p-10">
         <ul
           role="list"

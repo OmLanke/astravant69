@@ -58,7 +58,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <SearchByAddress />
+      <SearchByAddress database={db2}/>
       <div className="p-10">
         <ul
           role="list"
@@ -129,7 +129,7 @@ const Contact = () => {
             </div>
             <div className="2flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 w-full lg:w-1/2">
               <form onSubmit={handleSubmit}>
-                <div className=" flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
+                <div className="mb-4 flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
                   <input
                     type="text"
                     placeholder="First Name"
@@ -164,9 +164,9 @@ const Contact = () => {
                   placeholder="Your Budget Range"
                   value={budgetRange}
                   onChange={(event) => setBudgetRange(event.target.value)}
-                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4" 
                 />
-                <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
+                <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold mb-4">
                  {submitted ? 'Submitted' : 'Submit'}
                 </button>
               </form>
