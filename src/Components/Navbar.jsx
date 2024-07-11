@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsSideNavOpen(false);
-  }, [location])
+  }, [location]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -100,7 +100,13 @@ const Navbar = () => {
         </nav>
       )}
       {!show && (
-        <div className="fixed top-0 left-0 w-full bg-transparent text-white flex flex-row justify-between p-4 pl-8 pr-8 z-10 ">
+        <div
+          className={`fixed top-0 left-0 w-full flex flex-row justify-between p-4 pl-8 pr-8 z-10 transition-colors duration-300 ${
+            isScrolled
+              ? "bg-gray-200 bg-opacity-90 text-gray-900"
+              : "bg-transparent text-white"
+          }`}
+        >
           <img src={logo} className="h-14" alt="" />
           {!isSideNavOpen && (
             <button
@@ -126,7 +132,9 @@ const Navbar = () => {
         </div>
       )}
       <div
-        className={`bg-gray-300 opacity-80 ease-in-out duration-300 ${isSideNavOpen ? "translate-x-0 " : "translate-x-full"}`}
+        className={`bg-gray-300 opacity-80 ease-in-out duration-300 ${
+          isSideNavOpen ? "translate-x-0 " : "translate-x-full"
+        }`}
         style={{
           position: "fixed",
           top: 0,
@@ -245,7 +253,6 @@ const Navbar = () => {
           <hr className="my-2 border-indigo-600 border-b-2" />
         </div>
       </div>
-      
     </div>
   );
 };
