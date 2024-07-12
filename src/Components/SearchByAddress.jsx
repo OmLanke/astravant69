@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Modal from "react-modal";
 import { IoFilterSharp } from "react-icons/io5";
 
@@ -12,6 +12,20 @@ const SearchByAddress = ({ database }) => {
     amenities: []
   });
   const [searchText, setSearchText] = useState("");
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const newFilters = {
+      priceRange: params.get('priceRange') || '',
+      bhk: params.get('bhk') || '',
+      amenities: params.get('amenities') ? params.get('amenities').split(',') : [],
+    };
+    const newSearchText = params.get('search') || '';
+    setFilters(newFilters);
+    setSearchText(newSearchText);
+  }, [location.search]);
 
   useEffect(() => {
     const filterResults = () => {
@@ -42,11 +56,27 @@ const SearchByAddress = ({ database }) => {
   }, [filters, searchText, database]);
 
   const search = (event) => {
-    setSearchText(event.target.value.toLowerCase());
+    const newSearchText = event.target.value.toLowerCase();
+    setSearchText(newSearchText);
+    const params = new URLSearchParams(location.search);
+    if (newSearchText) {
+      params.set('search', newSearchText);
+    } else {
+      params.delete('search');
+    }
+    navigate(`${location.pathname}?${params.toString()}`);
   };
 
   const applyFilters = () => {
     setIsModalOpen(false);
+    const params = new URLSearchParams(location.search);
+    if (filters.priceRange) params.set('priceRange', filters.priceRange);
+    else params.delete('priceRange');
+    if (filters.bhk) params.set('bhk', filters.bhk);
+    else params.delete('bhk');
+    if (filters.amenities.length > 0) params.set('amenities', filters.amenities.join(','));
+    else params.delete('amenities');
+    navigate(`${location.pathname}?${params.toString()}`);
   };
 
   const handleAmenitiesChange = (event) => {
@@ -68,6 +98,7 @@ const SearchByAddress = ({ database }) => {
             name="search"
             id="search"
             onChange={search}
+            value={searchText}
             className="w-full rounded-md border-0 py-2 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-600 placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             placeholder="Search for specific address or project"
           />
@@ -130,7 +161,7 @@ const SearchByAddress = ({ database }) => {
         <div className="mx-auto max-w-2xl sm:px-6 lg:px-8">
           {searchResults.length > 0 ? (
             searchResults.map((item, index) => (
-              <Link to={`/propertypage${database === 'db2' ? '' : '2'}/${index}`} key={index}>
+              <Link to={`/propertypage/${index}`} key={index}>
                 <div className="border-b py-4 flex">
                   <div className="flex-shrink-0 mr-4">
                     <img
