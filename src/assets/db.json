@@ -1,6 +1,6 @@
 [
     {
-        "name": "Mount Merry Heights",
+        "name": "RANG MAHAL APARTMENTS",
         "bhk": "1.5 BHK",
         "area": "900 SqFt",
         "price": "100K",
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "name": "Carter Road Residency",
+        "name": "SUNMIST APARTMENTS",
         "bhk": "1 BHK",
         "area": "750 SqFt",
         "price": "100K",
@@ -52,7 +52,7 @@
         ]
     },
     {
-        "name": "Juhu Luxuria",
+        "name": "JUHU TRISHUL",
         "bhk": "2 BHK",
         "area": "1200 SqFt",
         "price": "110K",
@@ -81,7 +81,7 @@
         ]
     },
     {
-        "name": "Kalpak Hormus Apartments",
+        "name": "KALPAK HORMUS APARTMENTS",
         "bhk": "2 BHK",
         "area": "1300 SqFt",
         "price": "170K",
@@ -108,7 +108,7 @@
         ]
     },
     {
-        "name": "Juhu Residency",
+        "name": "SEA NYMPH APARTMENTS",
         "bhk": "2 BHK",
         "area": "1150 SqFt",
         "price": "100K",
@@ -134,7 +134,7 @@
         ]
     },
     {
-        "name": "Nivaan Apartments",
+        "name": "NIVAAN APARTMENTS",
         "bhk": "2 BHK",
         "area": "1250 SqFt",
         "price": "150K",
@@ -161,7 +161,7 @@
         ]
     },
     {
-        "name": "Madhu Park Residency",
+        "name": "DHAIRYA APARTMENTS",
         "bhk": "3 BHK",
         "area": "1400 SqFt",
         "price": "225K",
@@ -189,7 +189,7 @@
         ]
     },
     {
-        "name": "Waterfield Heights",
+        "name": "KAKAD NIWAS , WATERFIELD ROAD",
         "bhk": "4 BHK",
         "area": "2000 SqFt",
         "price": "250K",
@@ -216,7 +216,7 @@
         ]
     },
     {
-        "name": "Signature Island",
+        "name": "SIGNI ISLES (BKC)",
         "bhk": "3 BHK",
         "area": "7000 SqFt",
         "price": "",

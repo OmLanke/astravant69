@@ -4,31 +4,31 @@ const reviewsData = [
   {
     name: " Raeesa Merchant - Client Relations with Sodexo  ",
     review:
-      "Company executive name who assisted you out - Astravant Realty Overall experience while dealing - matured and well experienced  knowledgeable helpful and always very polite and well mannered",
+      "Review - matured and well experienced  knowledgeable helpful and always very polite and well mannered",
     date: "Astravant Realty",
     stars: 4,
   },
   {
     name: "Shahbaz Karim -owner @ Icarus entertainment ",
-    review: "Overall experience while dealing - Astravant Realty knows their work very well , Highly recommend !",
+    review: "Review - Astravant Realty knows their work very well , Highly recommend !",
     date: "Astravant Realty",
     stars: 5,
   },
   {
     name: "Sujay Mirchandani -Production house",
-    review: "Overall experience while dealing - Amazing experience dealing with Astravant Realty , super professional & helpful as always Their after sales service is also very strong",
+    review: "Review - Amazing experience dealing with Astravant Realty , super professional & helpful as always Their after sales service is also very strong",
     date: "Astravant Realty",
     stars: 3,
   },
   {
     name: "Hasan Rezza- Investor at global capital",
-    review: "Overall experience while dealing - Professional team ! Had a great experience would surely recommend to all looking out for real estate services",
+    review: "Review - Professional team ! Had a great experience would surely recommend to all looking out for real estate services",
     date: "Astravant Realty",
     stars: 4,
   },
   {
     name: " Somya Jain  - Brand Marketing Manager",
-    review: "Overall experience while dealing - He was about to help find a place that complimented my exact expectations. Highly recommend.",
+    review: "Review - He was about to help find a place that complimented my exact expectations. Highly recommend.",
     date: "Astravant Realty",
     stars: 5,
   },
