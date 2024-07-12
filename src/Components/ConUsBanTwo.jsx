@@ -117,7 +117,7 @@ const ConUsBanTwo = () => {
                         <p><a href="tel:+919136114754">+91 9136114754</a></p>
                         <p>E - Wing - 309, Crystal Plaza, OppositeInfiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
                         <div className="flex flex-row gap-4 justify-center lg:justify-start">
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" >
+                            <a href="https://www.instagram.com/astravant.realty?igsh=MTRlOHhlN2pzYXdyeg==" target="_blank" rel="noopener noreferrer" >
                                 <FaInstagram className="text-white h-6 w-6" />
                             </a>
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" >
