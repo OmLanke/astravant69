@@ -16,7 +16,7 @@ const HomeBannerOne = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-end gap-3 md:ml-56">
+          <div className="flex flex-row md:flex-row items-center justify-end gap-3 md:ml-56">
             <h2 className="font-medio" >
               Find
             </h2>
