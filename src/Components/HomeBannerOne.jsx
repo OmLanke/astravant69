@@ -7,7 +7,7 @@ const HomeBannerOne = () => {
         className="relative bg-cover flex flex-col bg-center w-full h-screen bg-[url('/hpbg.png')]"
       >
         <div className="flex flex-col gap-3 sm:gap-0 justify-between items-center my-auto text-3xl lg:text-7xl text-white font-light">
-          <div className="flex flex-col md:flex-row items-center  justify-start gap-3 md:mr-56">
+          <div className="flex flex-row md:flex-row items-center  justify-start gap-3 md:mr-56" >
             <h2 className="font-medio" >
               Where
             </h2>
