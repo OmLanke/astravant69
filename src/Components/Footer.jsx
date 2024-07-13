@@ -7,9 +7,12 @@ const Footer = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
     const data = {
       firstName,
       lastName,
@@ -26,13 +29,16 @@ const Footer = () => {
       });
 
       if (response.ok) {
-        alert('Message sent successfully!');
+        setSubmitted(true);
+        setLoading(false);
       } else {
         alert('Error sending message. Please try again.');
+        setLoading(false);
       }
     } catch (error) {
       console.error(error);
       alert('Error sending message. Please try again.');
+      setLoading(false);
     }
   };
 
@@ -45,7 +51,7 @@ const Footer = () => {
 
         <div className='flex flex-col md:flex-row'>
           <div className='text-[white] text-md'>
-            <p className='w-[70%]  pt-6 tracking-widest font-medium'>
+            <p className='w-[70%] pt-6 tracking-widest font-medium'>
               <a href="mailto: info@astravantrealty.com" className='pl-2'>info@astravantrealty.com</a>
               <p className='pt-4'>E - Wing - 309, Crystal Plaza, Opposite Infiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
             </p>
@@ -72,14 +78,16 @@ const Footer = () => {
                   placeholder="First Name"
                   value={firstName}
                   onChange={(event) => setFirstName(event.target.value)}
-                  className="flex-1 p-2  border-b-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="flex-1 p-2 border-b-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  disabled={submitted}
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(event) => setLastName(event.target.value)}
-                  className="flex-1 p-2 border-b-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="flex-1 p-2 border-b-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  disabled={submitted}
                 />
               </div>
 
@@ -89,14 +97,16 @@ const Footer = () => {
                   placeholder="Email"
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
-                  className="flex-1 p-2  border-b-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="flex-1 p-2 border-b-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  disabled={submitted}
                 />
                 <input
                   type="text"
                   placeholder="Phone Number"
                   value={phoneNumber}
                   onChange={(event) => setPhoneNumber(event.target.value)}
-                  className="flex-1 p-2 border-b-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="flex-1 p-2 border-b-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  disabled={submitted}
                 />
               </div>
 
@@ -106,17 +116,22 @@ const Footer = () => {
                   placeholder="Your Message Here"
                   value={message}
                   onChange={(event) => setMessage(event.target.value)}
-                  className="w-full p-2  border-b-2 hover:bg-white hover:text-black transition duration-500  hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  className="w-full p-2 border-b-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  disabled={submitted}
                 />
               </div>
 
-              <div className="w-full max-w-2xl">
+              <div className="w-full max-w-2xl flex items-center">
                 <button
                   type="submit"
-                  className="p-2 pl-8 pr-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500  hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold"
+                  className="p-2 pl-8 pr-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold"
+                  disabled={loading || submitted}
                 >
-                  Submit
+                  {loading ? "Submitting..." : submitted ? "Submitted" : "Submit"}
                 </button>
+                {submitted && (
+                  <span className="ml-4 text-white font-bold">Thank you for contacting us!</span>
+                )}
               </div>
             </form>
           </div>
