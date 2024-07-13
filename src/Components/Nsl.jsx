@@ -29,7 +29,7 @@ const Nsl = () => {
                 <div className="relative mx-auto my-auto">
                     <div className="flex flex-col md:flex-row justify-between items-center mx-auto">
                         <div className="relative bg-[rgba(29,89,227,0.51)] max-w-md leading-tight gap-4 mx-auto text-white p-4 py-16 flex flex-col justify-center items-center text-center">
-                            <p className='w-4/5 text-3xl font-medio'>Bringing your dream home near to you</p>
+                            <p className='w-4/5 text-3xl font-medio'>Bringing your dream home near you</p>
                             <p>
                                 <meta name="description" content="Astravant Realty: Leading real estate team in Mumbai offering expert buying, selling, and renting services with local expertise and global reach." />
                                 We offer the <strong>highest level of integrity, expertise, and service</strong>&nbsp;
