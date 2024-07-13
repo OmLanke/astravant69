@@ -1,11 +1,57 @@
-import React from 'react'
-import SearchByAddress from '../Components/SearchByAddress.jsx'
+import React, { useState } from 'react';
+import SearchByAddress from '../Components/SearchByAddress.jsx';
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import "../Pages/Search.css"
 import db from '../assets/db.json'
 import { Link } from 'react-router-dom'
 
-const Contact = () => {
+const RentalProp = () => {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [propertyRequirements, setPropertyRequirements] = useState('');
+  const [budgetRange, setBudgetRange] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = {
+      firstName,
+      lastName,
+      phoneNumber,
+      propertyRequirements,
+      budgetRange,
+    };
+
+    setLoading(true); // Set loading state to true while submitting
+
+    try {
+      const response = await fetch('https://nodemail-4m16.onrender.com/property-inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+        setFirstName('');
+        setLastName('');
+        setPhoneNumber('');
+        setPropertyRequirements('');
+        setBudgetRange('');
+        setSubmitted(true);
+      } else {
+        alert('Error sending message. Please try again.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Error sending message. Please try again.');
+    } finally {
+      setLoading(false); // Set loading state back to false after submission
+    }
+  };
+
   return (
     <div>
       <div
@@ -43,17 +89,6 @@ const Contact = () => {
                         {prop.bhk}, {prop.area}
                       </p>
                     </div>
-                    {/* <div className="flex justify-between p-4 sm:flex-col-reverse">
-                      <p>Address :-</p>
-                      <br></br>
-                      <p >{prop.address}</p>
-                      <p className="flex">
-                        <FaStarHalf />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                      </p>
-                    </div> */}
                     <div className="flex flex-col p-4">
                       <div className="flex justify-between items-start mb-2">
                         <div>
@@ -99,36 +134,62 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex flex-col items-center gap-4 sm:gap-6 lg:gap-8 w-full lg:w-1/2">
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
+              <form onSubmit={handleSubmit}>
+                <div className="mb-4 flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 w-full max-w-2xl">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    value={firstName}
+                    onChange={(event) => setFirstName(event.target.value)}
+                    className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
+                    disabled={submitted} // Disable input fields after submission
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    value={lastName}
+                    onChange={(event) => setLastName(event.target.value)}
+                    className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
+                    disabled={submitted} // Disable input fields after submission
+                  />
+                </div>
                 <input
                   type="text"
-                  placeholder="First Name"
-                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  placeholder="Phone Number"
+                  value={phoneNumber}
+                  onChange={(event) => setPhoneNumber(event.target.value)}
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
+                  disabled={submitted} // Disable input fields after submission
                 />
                 <input
                   type="text"
-                  placeholder="Last Name"
-                  className="flex-1 p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
+                  placeholder="Property Requirements"
+                  value={propertyRequirements}
+                  onChange={(event) => setPropertyRequirements(event.target.value)}
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
+                  disabled={submitted} // Disable input fields after submission
                 />
-              </div>
-              <input
-                type="text"
-                placeholder="Phone Number"
-                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-              />
-              <input
-                type="text"
-                placeholder="Property Requirements"
-                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-              />
-              <input
-                type="text"
-                placeholder="Your Budget Range"
-                className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold"
-              />
-              <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold">
-                Submit
-              </button>
+                <input
+                  type="text"
+                  placeholder="Your Budget Range"
+                  value={budgetRange}
+                  onChange={(event) => setBudgetRange(event.target.value)}
+                  className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4"
+                  disabled={submitted} // Disable input fields after submission
+                />
+                <button
+                  type="submit"
+                  className={`w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold mb-4 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  disabled={loading || submitted} // Disable button during loading or after submission
+                >
+                  {loading ? 'Submitting...' : submitted ? 'Submitted' : 'Submit'}
+                </button>
+              </form>
+              {submitted && (
+                <div className="text-green-600 font-bold text-lg mt-2">
+                  Thank you for your inquiry!
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -137,4 +198,4 @@ const Contact = () => {
   );
 }
 
-export default Contact;
+export default RentalProp;

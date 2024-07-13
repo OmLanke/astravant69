@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import SearchByAddress from '../Components/SearchByAddress.jsx';
 import { FaStar, FaStarHalf } from "react-icons/fa";
-import "../Pages/Search.css"
-import db2 from '../assets/db2.json'
-import { Link } from 'react-router-dom'
+import "../Pages/Search.css";
+import db2 from '../assets/db2.json';
+import { Link } from 'react-router-dom';
 
-const Contact = () => {
+const Search = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [propertyRequirements, setPropertyRequirements] = useState('');
   const [budgetRange, setBudgetRange] = useState('');
-  const [submitted, setSubmitted] = useState(false);  
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false); // State for loading state
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true); // Set loading state when submitting
+
     const data = {
       firstName,
       lastName,
@@ -43,6 +47,8 @@ const Contact = () => {
     } catch (error) {
       console.error(error);
       alert('Error sending message. Please try again.');
+    } finally {
+      setLoading(false); // Set loading state back to false after submission attempt
     }
   };
 
@@ -166,9 +172,12 @@ const Contact = () => {
                   onChange={(event) => setBudgetRange(event.target.value)}
                   className="w-full p-2 border-2 hover:bg-white hover:text-black transition duration-500 hover:cursor-pointer border-white text-white bg-transparent font-bold placeholder-bold mb-4" 
                 />
-                <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold mb-4">
-                 {submitted ? 'Submitted' : 'Submit'}
+                <button className="w-full sm:w-auto p-2 px-8 border-2 hover:bg-[#04236D] hover:text-black transition duration-500 hover:cursor-pointer border-[#04236D] text-white bg-transparent font-bold placeholder-bold mb-4" disabled={loading}>
+                  {loading ? 'Submitting...' : (submitted ? 'Submitted' : 'Submit')}
                 </button>
+                {submitted && (
+                  <p className="text-green-500 text-sm mt-2">Thank you for your submission!</p>
+                )}
               </form>
             </div>
           </div>
@@ -178,4 +187,4 @@ const Contact = () => {
   );
 }
 
-export default Contact;
+export default Search;
