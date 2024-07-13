@@ -14,7 +14,6 @@ const PropListBan = () => {
   const [numberOfBHK, setNumberOfBHK] = useState('');
   const [googleMapsLink, setGoogleMapsLink] = useState('');
   const [expectedSaleAndRent, setExpectedSaleAndRent] = useState('');
-  const [query, setQuery] = useState('');
   const [description, setDescription] = useState('');
   const [parking, setParking] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -43,7 +42,6 @@ const PropListBan = () => {
       numberOfBHK,
       googleMapsLink,
       expectedSaleAndRent,
-      query,
       description,
       parking,
     };
@@ -65,7 +63,6 @@ const PropListBan = () => {
         setNumberOfBHK('');
         setGoogleMapsLink('');
         setExpectedSaleAndRent('');
-        setQuery('');
         setDescription('');
         setParking('');
         setSubmitted(true);
@@ -104,7 +101,6 @@ const PropListBan = () => {
             <input type="text" value={numberOfBHK} onChange={(event) => setNumberOfBHK(event.target.value)} className="p-3 outline-none border-2 border-white bg-transparent placeholder-white" placeholder="Number of BHK" />
             <input type="text" value={googleMapsLink} onChange={(event) => setGoogleMapsLink(event.target.value)} className="p-3 outline-none border-2 border-white bg-transparent placeholder-white" placeholder="Google Maps Link" />
             <input type="text" value={expectedSaleAndRent} onChange={(event) => setExpectedSaleAndRent(event.target.value)} className="p-3 outline-none border-2 border-white bg-transparent placeholder-white" placeholder="Expected Sale and Rent" />
-            <input type="text" value={query} onChange={(event) => setQuery(event.target.value)} className="p-3 outline-none border-2 border-white bg-transparent placeholder-white" placeholder="Query" />
             <textarea value={description} onChange={(event) => setDescription(event.target.value)} name="" id="" rows="8" placeholder="Description" className="p-3 outline-none border-2 text-white border-white bg-transparent resize-none placeholder-white" ></textarea>
             <input type="text" value={parking} onChange={(event) => setParking(event.target.value)} className="p-3 outline-none border-2 border-white bg-transparent placeholder-white" placeholder="Parking" />
             <button className={`border-2 border-[#E79700] p-3 w-full sm:w-32 font-semibold self-center lg:self-start" ${submitted? 'opacity-50 cursor-not-allowed' : ''}`} type='submit' onClick={handleSubmit} > {submitted ? "Submitted" : "Submit"} </button>
