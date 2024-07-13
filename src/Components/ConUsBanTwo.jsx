@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './stylecon.css'; // Ensure the path is correct based on your project structure
-import { FaFacebookF, FaInstagram, FaLinkedinIn} from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const ConUsBanTwo = () => {
     const [show, setShow] = useState(true);
@@ -10,6 +10,7 @@ const ConUsBanTwo = () => {
     const [query, setQuery] = useState('');
     const [description, setDescription] = useState('');
     const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -17,7 +18,7 @@ const ConUsBanTwo = () => {
                 setShow(true);
             } else {
                 setShow(false);
-            }   
+            }
         };
 
         handleResize(); // Set initial state
@@ -27,6 +28,7 @@ const ConUsBanTwo = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        setLoading(true);
         const data = {
             firstName,
             lastName,
@@ -56,6 +58,8 @@ const ConUsBanTwo = () => {
         } catch (error) {
             console.error(error);
             alert('Error sending message. Please try again.');
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -76,6 +80,7 @@ const ConUsBanTwo = () => {
                                 onChange={(event) => setFirstName(event.target.value)}
                                 className="p-3 outline-none border-2 border-white bg-transparent placeholder-left-thin w-full"
                                 placeholder="First Name"
+                                disabled={submitted || loading}
                             />
                             <input
                                 type="text"
@@ -83,6 +88,7 @@ const ConUsBanTwo = () => {
                                 onChange={(event) => setLastName(event.target.value)}
                                 className="p-3 outline-none border-2 border-white bg-transparent placeholder-left-thin w-full"
                                 placeholder="Last Name"
+                                disabled={submitted || loading}
                             />
                         </div>
                         <input
@@ -91,6 +97,7 @@ const ConUsBanTwo = () => {
                             onChange={(event) => setEmail(event.target.value)}
                             className="p-3 outline-none border-2 border-white bg-transparent placeholder-left-thin"
                             placeholder="Email Address"
+                            disabled={submitted || loading}
                         />
                         <input
                             type="text"
@@ -98,6 +105,7 @@ const ConUsBanTwo = () => {
                             onChange={(event) => setQuery(event.target.value)}
                             className="p-3 outline-none border-2 border-white bg-transparent placeholder-left-thin"
                             placeholder="Your Query is regarding?"
+                            disabled={submitted || loading}
                         />
                         <textarea
                             value={description}
@@ -107,23 +115,34 @@ const ConUsBanTwo = () => {
                             rows="6"
                             placeholder="Description"
                             className="p-3 outline-none border-2 text-white border-white bg-transparent resize-none placeholder-left-thin"
+                            disabled={submitted || loading}
                         ></textarea>
-                        <button className={`flex flex-row border-2 items-center justify-center border-[#E79700] p-2 w-full sm:w-1/2 md:w-1/3 mx-auto ${submitted? 'opacity-50 cursor-not-allowed' : ''}`} type='submit' onClick={handleSubmit}>
-                            {submitted? 'Submitted' : 'Submit'}
-                        </button>
+                        <div className="flex items-center justify-center gap-4">
+                            <button
+                                className={`flex flex-row border-2 items-center justify-center border-[#E79700] p-2 w-full sm:w-1/2 md:w-1/3 mx-auto ${submitted ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                type='submit'
+                                onClick={handleSubmit}
+                                disabled={submitted || loading}
+                            >
+                                {loading ? 'Submitting...' : submitted ? 'Submitted' : 'Submit'}
+                            </button>
+                            {submitted && (
+                                <span className="text-white font-bold">Thank you for contacting us!</span>
+                            )}
+                        </div>
                     </div>
                     <div className="flex flex-col gap-4 text-xl sm:text-2xl md:text-3xl mt-8 lg:mt-0">
                         <p><a href="mailto: info@astravantrealty.com">info@astravantrealty.com</a></p>
                         <p><a href="tel:+919136114754">+91 9136114754</a></p>
-                        <p>E - Wing - 309, Crystal Plaza, OppositeInfiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
+                        <p>E - Wing - 309, Crystal Plaza, Opposite Infiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
                         <div className="flex flex-row gap-4 justify-center lg:justify-start">
-                            <a href="https://www.instagram.com/astravant.realty?igsh=MTRlOHhlN2pzYXdyeg==" target="_blank" rel="noopener noreferrer" >
+                            <a href="https://www.instagram.com/astravant.realty?igsh=MTRlOHhlN2pzYXdyeg==" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram className="text-white h-6 w-6" />
                             </a>
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" >
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                                 <FaFacebookF className="text-[#04236D] p-1 white bg-white h-6 w-6" />
                             </a>
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" >
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedinIn className="text-white h-6 w-6" />
                             </a>
                         </div>
@@ -131,7 +150,7 @@ const ConUsBanTwo = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default ConUsBanTwo;
