@@ -1,8 +1,7 @@
-
-
 import React, { useState, useEffect } from "react";
 import "./stylecon.css";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { ClipLoader } from "react-spinners";
 
 const PropListBan = () => {
   const [show, setShow] = useState(true);
@@ -17,6 +16,7 @@ const PropListBan = () => {
   const [description, setDescription] = useState('');
   const [parking, setParking] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,6 +33,7 @@ const PropListBan = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
     const data = {
       firstName,
       lastName,
@@ -55,16 +56,6 @@ const PropListBan = () => {
       });
       if (response.ok) {
         alert('Message sent successfully!');
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-        setPropertyLocation('');
-        setPropertyAcres('');
-        setNumberOfBHK('');
-        setGoogleMapsLink('');
-        setExpectedSaleAndRent('');
-        setDescription('');
-        setParking('');
         setSubmitted(true);
       } else {
         alert('Error sending message. Please try again.');
@@ -72,7 +63,23 @@ const PropListBan = () => {
     } catch (error) {
       console.error(error);
       alert('Error sending message. Please try again.');
+    } finally {
+      setLoading(false);
     }
+  };
+
+  const resetForm = () => {
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setPropertyLocation('');
+    setPropertyAcres('');
+    setNumberOfBHK('');
+    setGoogleMapsLink('');
+    setExpectedSaleAndRent('');
+    setDescription('');
+    setParking('');
+    setSubmitted(false);
   };
 
   return (
@@ -103,7 +110,31 @@ const PropListBan = () => {
             <input type="text" value={expectedSaleAndRent} onChange={(event) => setExpectedSaleAndRent(event.target.value)} className="p-3 outline-none border-2 border-white bg-transparent placeholder-white" placeholder="Expected Sale and Rent" />
             <textarea value={description} onChange={(event) => setDescription(event.target.value)} name="" id="" rows="8" placeholder="Description" className="p-3 outline-none border-2 text-white border-white bg-transparent resize-none placeholder-white" ></textarea>
             <input type="text" value={parking} onChange={(event) => setParking(event.target.value)} className="p-3 outline-none border-2 border-white bg-transparent placeholder-white" placeholder="Parking" />
-            <button className={`border-2 border-[#E79700] p-3 w-full sm:w-32 font-semibold self-center lg:self-start" ${submitted? 'opacity-50 cursor-not-allowed' : ''}`} type='submit' onClick={handleSubmit} > {submitted ? "Submitted" : "Submit"} </button>
+            <div className="flex gap-4">
+              <button
+                className={`border-2 border-[#E79700] p-3 w-full sm:w-32 font-semibold ${submitted ? 'opacity-50 cursor-not-allowed' : ''}`}
+                type='submit'
+                onClick={handleSubmit}
+                disabled={loading || submitted} 
+              >
+                {loading ? (
+                  <div className="flex items-center justify-center">
+                    <ClipLoader color="#ffffff" size={24} /> {/* Loading animation */}
+                  </div>
+                ) : (
+                  submitted ? "Submitted" : "Submit"
+                )}
+              </button>
+              {submitted && (
+                <button
+                  className="border-2 border-[#E79700]  w-full sm:w-32 font-semibold"
+                  onClick={resetForm}
+                >
+                  Submit Another Response
+                </button>
+                )}
+              
+            </div>
           </div>
         </div>
       </div>
