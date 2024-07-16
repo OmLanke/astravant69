@@ -241,5 +241,31 @@
             "/63.jpg",
             "/64.jpg"
         ]
+    },
+    {
+        "name": "WAVE-LASH APARTMENTS",
+        "bhk": "2 BHK FOR SALE",
+        "area": "750 sqft carpet area",
+        "price": "4.65Cr quote",
+        "ready": "Ready to move in",
+        "verified": "Verified",
+        "bedrooms": "2",
+        "address": "BKC",
+        "parking": "1 Car park",
+        "description": "OC approved,Prime locality",
+        "amenities": "",
+        "other": "",
+        "imgurl": "/65.jpeg",
+        "location": "Khar West",
+        "facing": "South",
+        "furnishing": "Furnished",
+        "imgurls": [
+            "/66.jpeg",
+            "/67.jpeg",
+            "/68.jpeg",
+            "/69.jpeg",
+            "/70.jpeg",
+            "/71.jpeg"
+        ]
     }
 ]
