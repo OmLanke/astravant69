@@ -6,7 +6,7 @@ const Mobile = () => {
       <div className="flex flex-col w-full justify-start text-white text-center bg-[#001F66] p-4 gap-4">
         <div className="text-4xl font-medio">
           <p>Astravant Realty group:</p>
-          <p>India's #1 real estate</p>
+          <p>Mumbai's #1 real estate</p>
           <p>agency.</p>
         </div>
         <img src="charman.png" className="mx-auto h-[70vh]" alt="" />
