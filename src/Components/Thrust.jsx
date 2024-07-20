@@ -28,7 +28,7 @@ const reviewsData = [
   },
   {
     name: " Somya Jain  - Brand Marketing Manager",
-    review: "Review - He was about to help find a place that complimented my exact expectations. Highly recommend.",
+    review: "Review - Helped find a place that complimented my exact expectations. Highly recommend.",
     date: "Astravant Realty",
     stars: 5,
   },
