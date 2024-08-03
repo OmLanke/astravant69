@@ -53,6 +53,8 @@ const Footer = () => {
           <div className='text-[white] text-md'>
             <p className='w-[70%] pt-6 tracking-widest font-medium'>
               <a href="mailto: info@astravantrealty.com" className='pl-2'>info@astravantrealty.com</a>
+              <p><a href="tel:+919136114754">+91 9136114754</a></p>
+              <p><a href="tel:+919930752917">+91 9930752917</a></p>
               <p className='pt-4'>E - Wing - 309, Crystal Plaza, Opposite Infiniti Mall, Andheri Link Road, Andheri West, Mumbai - 400 053</p>
             </p>
             <div className='pt-6 font-bold'>
