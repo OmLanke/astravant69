@@ -1,40 +1,37 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 
 const reviewsData = [
   {
-    name: " Raeesa Merchant - Client Relations with Sodexo  ",
+    name: " Anastasia Romero",
     review:
-      "Review - matured and well experienced  knowledgeable helpful and always very polite and well mannered",
+      "Astravant Team knows their job well , It was hard for me to get a house of my choice on Bandra West , But their expertise came in handy.",
     date: "Astravant Realty",
     stars: 4,
   },
   {
-    name: "Shahbaz Karim -owner @ Icarus entertainment ",
-    review: "Review - Astravant Realty knows their work very well , Highly recommend !",
+    name: "Jim Robert ",
+    review: "Daanish has a very good attitude & knowledge of what he does , Highly recommend him & his team for all real estate transactions",
     date: "Astravant Realty",
     stars: 5,
   },
   {
-    name: "Sujay Mirchandani -Production house",
-    review: "Review - Amazing experience dealing with Astravant Realty , super professional & helpful as always Their after sales service is also very strong",
+    name: "Sofia malik",
+    review: "It was a good experience dealing with them , Got exactly what I wanted ",
     date: "Astravant Realty",
     stars: 3,
   },
   {
-    name: "Hasan Rezza- Investor at global capital",
-    review: "Review - Professional team ! Had a great experience would surely recommend to all looking out for real estate services",
+    name: "Murtuza khan",
+    review: "Daanish & his team are revolutionising the Real estate market , The service we got from their company was commendable Highly recommend",
     date: "Astravant Realty",
-    stars: 4,
-  },
-  {
-    name: " Somya Jain  - Brand Marketing Manager",
-    review: "Review - Helped find a place that complimented my exact expectations. Highly recommend.",
-    date: "Astravant Realty",
-    stars: 5,
-  },
+    stars: 3,
+  }
   // More reviews can be added here
 ];
 
+// eslint-disable-next-line react/prop-types
 const Card = ({ stars, name, review, date  }) => {
   return (
     <div className="bg-white shadow-lg p-4 pl-8 pr-8 rounded-3xl gap-4 flex flex-col hover:shadow-xl">
@@ -147,9 +144,9 @@ const Thrust = () => {
         </div>
 
         <div className="flex flex-col md:flex-row my-8 text-[#001F66] justify-between font-medio">
-          <Highlight t1="12+" t2="Years of experience in real estate" />
-          <Highlight t1="800+" t2="Real estate projects" />
-          <Highlight t1="5+" t2="Million sq. ft sold." />
+          <Highlight t1="10+" t2="Years of experience in real estate" />
+          <Highlight t1="250+" t2="Real estate projects" />
+          <Highlight t1="1+" t2="Million sq. ft sold." />
         </div>
       </div>
     </div>

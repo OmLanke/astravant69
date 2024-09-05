@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 
