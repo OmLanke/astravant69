@@ -144,9 +144,10 @@ const Thrust = () => {
         </div>
 
         <div className="flex flex-col md:flex-row my-8 text-[#001F66] justify-between font-medio">
-          <Highlight t1="10+" t2="Years of experience in real estate" />
-          <Highlight t1="250+" t2="Real estate projects" />
-          <Highlight t1="1+" t2="Million sq. ft sold." />
+          <Highlight t1="3,00,00+" t2="Sqft sold" />
+          <Highlight t1="150+" t2="Investors entrusted us" />
+          <Highlight t1=" 2,00,000" t2="sqft. leased" />
+          <Highlight t1="20+" t2="Developer worked with" />
         </div>
       </div>
     </div>
